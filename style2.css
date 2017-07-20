@@ -39,7 +39,7 @@
 .ul-style-off {
   list-style-type: none;
 }
-.test {
+.custom-ul-resources {
   margin: auto;
   text-align: center;
   width: 80%;
@@ -57,4 +57,27 @@
   padding: 10px;
   margin: none;
   color: green;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+.bg-lightgray {
+  background-color: #f3f4f7;
+}
+.bg-white {
+  background-color: white;
+}
+.custom-section-introtoscratch {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 10px;
+}
+.article-img {
+  padding: 1.875em;
+    max-width: 100%;
 }

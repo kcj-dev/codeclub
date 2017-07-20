@@ -44,6 +44,7 @@ header a:hover{
 
 h1, h2, h3, h4, h5, h6, a{
   font-family: 'museo-500';
+  line-height: 1.5;
 }
 /*
 a{
@@ -55,13 +56,17 @@ h5{
 }
 */
 a:hover, input:hover, button:hover {
-  text-decoration: none;
-  color: #1f9edd;
+  color: white;
+  text-decoration: underline;
   /*-webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;*/
 }
 a[class^="text-orange"]:hover{
   color: #fb4c06;
+  text-decoration: none;
+}
+a[class^="text-green"]:hover{
+  color: #333333;
   text-decoration: none;
 }
 input[type^="email"]:hover, input[type^="text"]:hover{
@@ -128,7 +133,10 @@ strong{
   background-color: white;
   color: #333333;
 }
-
+.bg-mininav{
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
 .border-xs {
   border: 1px solid;
 }

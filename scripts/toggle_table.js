@@ -11,19 +11,31 @@ $('document').ready(function(){
   $scratch1.click(function(){
     $scratch2.removeClass('active');
   });
+
   $scratch2.click(addActive);
+  $scratch2.click(function(){
+    $scratch1.removeClass('active');
+  });
 
   $webdev1Btn.click(addActive);
   $webdev1Btn.click(function(){
     $webdev2Btn.removeClass('active');
   });
+
   $webdev2Btn.click(addActive);
+  $webdev2Btn.click(function(){
+    $webdev1Btn.removeClass('active');
+  });
 
   $python1Btn.click(addActive);
   $python1Btn.click(function(){
     $python2Btn.removeClass('active');
   });
+
   $python2Btn.click(addActive);
+  $python2Btn.click(function(){
+    $python1Btn.removeClass('active');
+  });
 });
 
 function addActive(e){

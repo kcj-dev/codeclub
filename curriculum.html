@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Curriculum – Code Club</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="Pengkim Sy">
+  <link rel="icon" sizes="16x16 32x32 128x128" href="../../favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <script src="scripts/toggle_table.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+  <nav class="text-xs navbar navbar-custom navbar-fixed-top">
+    <div class="container padding-small">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a href="index.html" class="text-green text-bold"><img src="img/icon/code-club-logo.svg" width="65" height="60"/>Code Club Canada</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse navbar-right">
+        <ul class="nav nav-pills">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Start a Club</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="workshop.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="after-nav">
+    <header class="bg-green padding-xxl text-center">
+      <h1 class="text-xxl text-bold">Curriculum</h1>
+    </header>
+    <section class="well">
+      <div class="container container-custom padding-m">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-m">
+              <p class="text-center padding-s">The Code Club projects are step by step guides for children to follow to create animations, games, websites and much more. Children will build up their programming skills as they move through the projects, and challenges provide opportunities
+                to demonstrate and apply what’s been learnt.</p>
+              <nav class="padding-top-s">
+                <ul class="list-unstyled text-center">
+                  <li class="d-inline"><a data-scroll class="btn btn-border-green" href="#scratch">Scratch</a></li>
+                  <li class="d-inline"><a data-scroll class="btn btn-border-green" href="#webdev">HTML & CSS</a></li>
+                  <li class="d-inline"><a data-scroll class="btn btn-border-green" href="#python">Python</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <div class="skills-map">
+      <div class="container container-custom">
+        <article>
+          <header id="scratch" class="padding-top">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1 class="padding-xs"> Scratch </h1>
+                <p class="padding-xs">
+                  Scratch is a graphical programming language, developed by the Lifelong Kindergarten group at the Massachusetts Institute of Technology. Children can drag and combine code blocks to make a range of programs, including animations, stories, musical instruments
+                  and games. It’s a bit like the programming equivalent of Lego!
+                </p>
+                <a class="padding-xs text-green text-s" href="/en-GB/resources/#scratch">Scratch Resources
+                  <span class="icon-arrow-circle-green"></span>
+                </a>
+              </div>
+            </div>
+          </header>
+          <section>
+            <div class="content">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="text-center"> Skills Map </h3>
+                  <p class="text-center">
+                    Each of our projects teaches a different programming skill and children build on the skills they have learned as they complete the projects in order. The handy table below explains which skills each of the projects covers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="padding-s">
+            <div class="summary">
+              <div class="row">
+                <div class="col-md-12">
+                  <!--
+                  <script>
+                    $('#scratch1 a').click(function(e) {
+                      e.preventDefault()
+                      $(this).tab('show')
+                    })
+                  </script>
+                -->
+                  <div class="tab-list">
+                    <!-- Nav tabs -->
+                    <ul id="scratchBtns" role="tablist">
+                      <li role="presentation" class="active d-inline"><a id="scratch1Btn" class="btn btn-secondary active" href="#scratch1" aria-controls="home" role="tab" data-toggle="tab">Scratch 1</a></li>
+                      <li role="presentation" class="d-inline"><a id="scratch2Btn" class="btn btn-secondary" href="#scratch2" aria-controls="profile" role="tab" data-toggle="tab">Scratch 2</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="scratch1">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Project 1: Rock Band</th>
+                              <th>Project 2: Lost in Space</th>
+                              <th>Project 3: Ghostbusters</th>
+                              <th>Project 4: ChatBot</th>
+                              <th>Project 5: Paint Box</th>
+                              <th>Project 6: Boat Race</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                            <th scope="row">Sequencing</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Repetition</th>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Variables</th>
+                              <td></td>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Selection</th>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Boolean Operators</th>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Data Structures</th>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Functions</th>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="scratch2">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Project 1: Memory</th>
+                              <th>Project 2: Dodgeball</th>
+                              <th>Project 3: Brain Game</th>
+                              <th>Project 4: Catch the Dots</th>
+                              <th>Project 5: Clone Wars</th>
+                              <th>Project 6: Create Your Own World</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Sequencing</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Repetition</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Variables</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Selection</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Boolean Operators</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Data Structures</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td></td>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Functions</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    </section>
+    </article>
+    </div>
+    </div>
+    <div class="skills-map">
+      <div class="container container-custom">
+        <article>
+          <header id="webdev" class="padding-top">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="padding-xs"> HTML &amp; CSS </h2>
+                <p>
+                  HyperText Markup Language (HTML) is a language for describing and structuring web pages. HTML documents can include things like text, images, sound and video, using ‘tags’ to organise the content.
+                </p>
+                <a class="text-green text-s padding-xs" href="/en-GB/resources/#html-&-css">HTML & CSS Resources
+                  <span class="icon-arrow-circle-green"></span>
+                </a>
+              </div>
+            </div>
+          </header>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center padding-xxs"> Skills Map </h3>
+              <p class="text-center">
+                Each of our projects teaches a different programming skill and children build on the skills they have learned as they complete the projects in order. The handy table below explains which skills each of the projects covers.
+              </p>
+            </div>
+          </div>
+          <section>
+            <div class="summary padding-s">
+              <div class="summary">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <!--
+                    <script>
+                      $('#webdev1 a').click(function(e) {
+                        e.preventDefault()
+                        $(this).tab('show')
+                      })
+                    </script>
+                  -->
+                    <div class="tab-list">
+                      <!-- Nav tabs -->
+                      <ul role="tablist">
+                        <li role="presentation" class="active d-inline"><a id="webdev1Btn" class="btn btn-secondary active" href="#webdev1" aria-controls="home" role="tab" data-toggle="tab">HTML & CSS 1</a></li>
+                        <li role="presentation" class="d-inline"><a id="webdev2Btn" class="btn btn-secondary" href="#webdev2" aria-controls="profile" role="tab" data-toggle="tab">HTML & CSS 2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="webdev1">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Project 1: Happy Birthday</th>
+                                <th>Project 2: Tell a Story</th>
+                                <th>Project 3: Wanted!</th>
+                                <th>Project 4: Recipe</th>
+                                <th>Project 5: Mystery Letter</th>
+                                <th>Project 6: Project Showcase</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Writing HTML</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">HTML Images</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">HTML Lists</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">HTML Links</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Writing CSS</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Colours</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Positioning</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Gradients</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Animation</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">JavaScript</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="webdev2">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Project 1: Build a Robot</th>
+                                <th>Project 2: Stickers!</th>
+                                <th>Project 3: Sunrise</th>
+                                <th>Project 4: Linked Rooms</th>
+                                <th>Project 5: Magazine</th>
+                                <th>Project 6: Pixel Art</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Writing HTML</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">HTML Images</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">HTML Lists</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">HTML Links</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Writing CSS</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Colours</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Positioning</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Gradients</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">CSS Animation</th>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">JavaScript</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      </section>
+      </article>
+    </div>
+    </div>
+    <div class="skills-map">
+      <div class="container container-custom">
+        <article>
+          <header id="python" class="padding-top">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="padding-xs"> Python </h2>
+                <p>
+                  Python is a widely used, general purpose, text-based programming language. We recommend using the Trinket online editor for Python.
+                </p>
+                <a class="text-s text-green padding-xs" href="/en-GB/resources/#python">Python Resources
+                  <span class="icon-arrow-circle-green"></span>
+                </a>
+              </div>
+            </div>
+          </header>
+          <section>
+            <div class="content">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="text-center padding-xxs"> Skills Map </h3>
+                  <p class="text-center">
+                    Each of our projects teaches a different programming skill and children build on the skills they have learned as they complete the projects in order. The handy table below explains which skills each of the projects covers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="summary padding-s">
+              <div class="summary">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <!--
+                    <script>
+                      $('#python1 a').click(function(e) {
+                        e.preventDefault()
+                        $(this).tab('show')
+                      })
+                    </script>
+                  -->
+                    <div class="tab-list">
+                      <!-- Nav tabs -->
+                      <ul role="tablist">
+                        <li role="presentation" class="active d-inline"><a id="python1Btn" class="btn btn-secondary active" href="#python1" aria-controls="home" role="tab" data-toggle="tab">Python 1</a></li>
+                        <li role="presentation" class="d-inline"><a id="python2Btn" class="btn btn-secondary" href="#python2" aria-controls="profile" role="tab" data-toggle="tab">Python 2</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="python1">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Project 1: ASCII Art</th>
+                                <th>Project 2: Rock, Paper, Scissors</th>
+                                <th>Project 3: Turtle Race</th>
+                                <th>Project 4: Team Chooser</th>
+                                <th>Project 5: Colourful Creations</th>
+                                <th>Project 6: Secret Messages</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <th scope="row">Sequencing</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Variables</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Selection</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Repetition</th>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Boolean Operators</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Data Structures</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Functions</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">File Handing</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Web Services</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="python2">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Project 1: Modern Art</th>
+                                <th>Project 2: Popular Pets</th>
+                                <th>Project 3: RPG</th>
+                                <th>Project 4: Robo-Trumps</th>
+                                <th>Project 5: Where is the ISS?</th>
+                                <th>Project 6: CodeCraft</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <th scope="row">Sequencing</th>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Variables</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Selection</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Repetition</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Boolean Operators</th>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Data Structures</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Functions</th>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">File Handling</th>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Web services</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img class="center-block" src="img/icon/icons_tick.svg"></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      </section>
+      </article>
+    </div>
+    </div>
+  </section>
+
+  <footer class="bg-black">
+    <div class="container width-950 padding-m">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <h5 class="text-uppercase">Start a club</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Working with Children</a></li>
+            <li><a href="#">Tips</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6 padding-bot-xxl">
+          <h5 class="text-uppercase">About</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Code Club</a></li>
+            <li><a href="#">Support us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <h5 class="text-uppercase">Help</h5>
+          <ul class="list-unstyled">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <h5 class="text-uppercase">Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Skill Map</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Technical Information</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="bg-black padding-xs width-1100 margin-auto">
+      <div class="social-links social-links-m pull-right">
+        <a href="https://www.facebook.com/KidsCodeJeunesse" target="_blank">
+          <i class="d-block fa fa-facebook bg-white social-black-hover"></i>
+        </a>
+        <a href="https://twitter.com/kidscoding" target="_blank">
+          <i class="d-block fa fa-twitter bg-white social-black-hover"></i>
+        </a>
+      </div>
+      <p class="text-white">&copy; Code Club Canada 2017</p>
+    </section>
+  </footer>
+
+  <!--
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+
+    ga('create', 'UA-30750176-9', 'auto');
+
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    smoothScroll.init();
+  </script>
+-->
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-italic {
+  font-style: italic;
+}
+.custom-row-faq {
+  width: 80%;
+  margin:auto;
+  height: auto;
+}
+.padding-left-s {
+  padding-left: 5%;
+}
+.padding-top-l {
+  padding-top: 75px;
+}
+.btn-alt-link {
+    background-color: inherit;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-weight: 700;
+    color: #339933;
+}
+.text-black {
+  color: black;
+}
+.a-hover-off:hover {
+  text-decoration: none;
+  color: black;
+}
+.text-right {
+  text-align: right;
+}
+.algin-center {
+  margin: auto;
+  text-align: center;
+}
+.ul-style-off {
+  list-style-type: none;
+}
+.test {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  line-height: 40px;
+}
+.custom-border-green-disck {
+  padding: 10px;
+  margin: 20px;
+}
+.custom-border-green-disck:hover {
+  border: 2px solid;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: none;
+  padding: 10px;
+  margin: none;
+  color: green;
+}

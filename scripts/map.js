@@ -12,28 +12,15 @@ $(function() {
 
   CodeClubWorld.makeMap();
 
-  CodeClubWorld.region = document.getElementById('region');
+  CodeClubWorld.region = document.getElementById('region-search');
   CodeClubWorld.region.onchange = CodeClubWorld.makeMap;
 
-  CodeClubWorld.infobox = new google.maps.InfoWindow({
-    disableAutoPan: false,
-    maxWidth: 150,
-    pixelOffset: new google.maps.Size(-140, -250),
-    zIndex: null,
-    boxStyle: {
-      background: '#fff',
-      width: '280px',
-      height: '200px',
-      padding: '0 10px'
-    },
-    infoBoxClearance: new google.maps.Size(1, 1),
-    closeBoxURL: '/img/map/close.png',
-    closeBoxMargin: '10px 0 0 0'
-  });
+  CodeClubWorld.infobox = new google.maps.InfoWindow();
+
 });
 
 CodeClubWorld.makeMap = function() {
-  console.log("makeMap called");
+//  console.log("makeMap called");
   var el = document.getElementById('map');
   //console.log(el);
   if (!el) return;
@@ -48,17 +35,19 @@ CodeClubWorld.makeMap = function() {
     var clubs = data,
         markers = [];
 
-    var LatLng = new google.maps.LatLng(55, -90);
-    var lat = CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat");
-    var lng = CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng");
-    console.log(lat + ' ' + lng);
+    var lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
+    var lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
+    var LatLng = new google.maps.LatLng(lat, lng);
+
+    var dataZ = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-z"));
+
     var map = new google.maps.Map(el, {
-      zoom: 3,
+      zoom: dataZ,
       center: LatLng,
       scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    //console.log(data);
+    console.log(data);
     $.each(clubs, function(i, club) {
       var address = club.venue.address;
       if (!address) return;
@@ -70,57 +59,71 @@ CodeClubWorld.makeMap = function() {
 
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
-            position: latLng
-          /*  icon: '/img/map/marker.png'*/
+            position: latLng,
+            icon: '/img/marker.png'
           });
 
       markers.push(marker);
 
       google.maps.event.addListener(marker, 'click', function() {
         var infobox = CodeClubWorld.infobox;
-
         infobox.close();
 
         var content = [];
 
-        content.push('<h5 class="name">' + club.name  +'</h5>');
+        if (club.name){
+          content.push('<h5 class="text-green text-uppercase">' + club.name  +'</h5>');
+        }
 
         if (club.venue.address.city) {
-          content.push('<p class="city">' + club.venue.address.city + '</p>');
+          content.push('<p>City: ' + club.venue.address.city + '</p>');
         }
 
-        if (club.venue.address.country.name) {
-          content.push('<p class="country">' + club.venue.address.country.name + '</p>');
+        if (club.venue.address.country) {
+          content.push('<p>' + club.venue.address.country.name + '</p>');
         }
 
-        if (club.url) {
-          content.push(
-            '<a class="website" href="' + club.url + '">' +
-              club.url +
-            '</a>'
-          );
+        if (club.looking_for_volunteer == true) {
+          content.push('<p><span class="glyphicon glyphicon-ok"></span> Looking for volunteers</p>');
+          if (club.venue.url) {
+            content.push(
+              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
+                club.venue.url +
+              '</a>'
+            );
+          }
+          content.push('<a class="btn btn-border-green" href="https://www.codeclub.org.uk/start-a-club/volunteers">Volunteer</a>');
+        } else {          
+          content.push('<p><span class="glyphicon glyphicon-remove"></span> Looking for volunteers</p>');
+          if (club.venue.url) {
+            content.push(
+              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
+                club.venue.url +
+              '</a>'
+            );
+          }
         }
+
+
 
         content = content.join('');
 
+      //  console.log(content);
         infobox.setContent(content);
         infobox.open(map, marker);
       });
     });
 
-    $('.counter').append(clubs.length);
+    $('.counter').replaceWith(clubs.length);
     // TODO: I've commented out the styles section to make
     // this work in jsbin. Leave the styles section of the
     // mcOptions "as is"
     var mcOptions = {
       gridSize: 30,
+      imagePath: '/img/m'
     };
 
-  /*  var markerCluster = new google.maps.Marker(markers, mcOptions);
-    markerCluster.setMap(map);*/
+   var markerCluster = new MarkerClusterer(map, markers, mcOptions);
 
-    for(var i=0; i<markers.length; i++){
-      markers[i].setMap(map);
-    }
   });
 };

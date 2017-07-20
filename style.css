@@ -3,6 +3,11 @@
     src: url("fonts/exljbris - MuseoSansRounded-300.otf");
 }
 
+@font-face {
+    font-family: Museo-500;
+    src: url("fonts/exljbris - MuseoSansRounded-500.otf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -36,15 +41,15 @@ header a:hover{
   color: gray;
   text-decoration: none;
 }
-/*
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Roboto-black', sans-serif;
-  font-weight: bold;
-}
 
+h1, h2, h3, h4, h5, h6, a{
+  font-family: 'museo-500';
+}
+/*
 a{
   font-weight: 900;
 }
+
 h5{
   font-size: 16px;
 }
@@ -124,18 +129,20 @@ strong{
   color: black;
 }
 
-.border {
-  /*text-transform: uppercase;
-  font-weight: bold;*/
-  /*padding: 2.7px 11px 2.7px 11px;*/
+.border-xs {
   border: 1px solid;
-  border-color: inherit;
+}
+.border-s{
+  border: 3px solid;
 }
 .border-padding{
   padding: 2.7px 11px 2.7px 11px;
 }
 .border-white{
   border-color: white;
+}
+.border-green{
+  border-color: #479946;
 }
 .border-radius{
   border-radius: 20px;
@@ -150,10 +157,11 @@ strong{
 
 .input{
   color: black;
-  /*border: 1px solid;*/
-  /*font-size: 16px;*/
+  padding: 5px;
+  font-size: 16px;
   width: 300px;
-  /*line-height: 2;*/
+/*  line-height: 2.3;*/
+  border-radius: 10px;
 }
 .btn-blue {
   background-color: #3bb2f7;
@@ -181,7 +189,6 @@ strong{
 .btn-green{
   background-color: #479946;
   color: white;
-  border: 3px solid #479946;
   border-radius: 30px;
 }
 
@@ -210,6 +217,9 @@ strong{
   margin-right: auto;
 }
 
+.d-block{
+  display: block;
+}
 .d-inline{
   display: inline;
 }
@@ -251,8 +261,8 @@ strong{
 #map{
   width: 100%;
   height: 400px;
-  margin: 10px;
-  border-right: 5px solid white;
+  margin-top: 20px;
+  border: 12px solid white;
 }
 
 .navbar-custom {
@@ -434,7 +444,7 @@ strong{
   appearance: none;
   background: #fff url(img/select-arrow.svg) right center no-repeat;
   cursor: pointer;
-  font-family: "museosansrounded", Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-300";
   font-weight: 300;
   border: 1px solid #E0E0E0;
   border-radius: 8px;

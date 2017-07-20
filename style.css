@@ -289,13 +289,13 @@ strong{
 }
 
 .navbar-custom .nav>.active>a {
-  color: #1f9edd;
+  color: #333333;
   background-color: transparent;
 }
 
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus, .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
   text-decoration: none;
-  color: black;
+  color: #333333;
   background-color: transparent;
 }
 

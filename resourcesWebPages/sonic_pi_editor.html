@@ -44,105 +44,62 @@
     </nav>
 
     <div class="bg-green after-nav padding-xxl">
-      <h1 class="text-white text-center text-uppercase">Getting Started with the Raspberry Pi</h1>
+      <h1 class="text-white text-center text-uppercase">Using the Sonic Pi editor</h1>
     </div>
     <section class="container custom-section-introtoscratch bg-white">
-      <h5 class="padding-top-s text-heavy text-capitalize">Getting Started</h5>
+      <h5 class="padding-top-s text-heavy text-capitalize">Downloading and Installing the Sonic Pi Editor</h5>
+      <h5 class="padding-top-s text-heavy text-capitalize">Raspberry Pi</h5>
       <p class="padding-top-m">
-        The first Code Club Raspberry Pi project gets the children to assemble the
-        Raspberry Pi and its peripherals. It assumes that an SD card with the
-        Raspberry Pi operating system will be available so you will need to
-        acquire or prepare this first.
+        Sonic Pi is included in Raspbian, you can find it under the Programming section of the menu.
       </p>
+      <h5 class="padding-top-s text-heavy text-capitalize">Raspberry Pi</h5>
+      <p class="padding-top-m">
+        Sonic Pi is available to
+        <a href="http://sonic-pi.net/" class="text-green" target="_blank">download</a>
+        for MacOS, Windows and Linux.
+      </p>
+      <p class="padding-top-s">
+        Note that there’s a ‘Sonic Pi Portable’ option which will self-extract and run from a USB stick
+        or a folder, this is useful if you can’t easily get software installed.
+      </p>
+      <h5 class="padding-top-s text-heavy text-capitalize">The Sonic Pi Editor</h5>
 
-      <h5 class="padding-top-s text-heavy text-capitalize"></h5>
-      <p class="padding-top-m">
-        We recommend buying a Raspberry Pi bundle which includes a Raspberry Pi,
-        a compatible 5V power supply and a micro SD card with NOOBS or Raspbian installed.
-      </p>
-      <p class="padding-top-s">
-        In some venues you will be able to borrow a monitor, keyboard, mouse and headphones
-        and won’t need to get items specically for the Raspberry Pi.
-      </p>
-      <p class="padding-top-s">
-        You will need:
-      </p>
-      <ul class="padding-left-s padding-top-s">
-        <li>A monitor with the correct cable and adapter</li>
-        <li>A micro USB power supply</li>
-        <li>A wired keyboard and mouse, or a wireless keyboard and mouse with a Bluetooth adapter</li>
-        <li>A micro SD card</li>
-        <li>A Raspberry Pi</li>
-        <li>Optionally, headphones or a speaker</li>
-        <li>Optionally, an ethernet cable (the Pi has onboard Wifi so you may use this instead if you need connectivity)</li>
-        <li>Some projects will require additional hardware, see projects for details</li>
-      </ul>
-      <p class="padding-top-s">
-        See the
-        <a href="https://www.raspberrypi.org/learning/hardware-guide/equipment/" class="text-green" target="_blank">
-        Raspberry Pi Hardware Guide</a>
-        for more details.
-      </p>
-      <p class="padding-top-s">
-        Useful things to note:
-      </p>
-      <ul class="padding-left-s padding-top-s">
-        <li>Many older monitors (and projectors) will use VGA cables so you’ll need an HDMI adapter for the Raspberry Pi.</li>
-        <li>To get sound you’ll either need an HDMI monitor/TV with speakers or a set of headphones or speakers connected to the Pi.</li>
-        <li>If you want to use a microphone then you’ll need a USB microphone.</li>
-        <li>Newer models of the Raspberry Pi use a micro SD card whereas older models
-          use a full size SD card (or micro SD card with adapte</li>
-      </ul>
-      <h5 class="padding-top-s text-heavy text-capitalize">Installing the Raspbian Operating System</h5>
-      <p class="padding-top-m">
-        You’ll need an operating system for your Raspberry Pi. The Raspberry Pi runs
-        Raspbian a version of Debian Linux.
-      </p>
-      <p class="padding-top-s">
-        You may have bought a bundle with an SD Card with Raspbian already installed,
-        if not you’ll need to install it.
-      </p>
-
-      <h5 class="padding-top-s text-heavy text-capitalize">NOOBS vs Raspbian</h5>
-      <p class="padding-top-m">
-        NOOBS is a straightforward way to install Raspbian and our recommended option
-        for first time users. You download the NOOBS zip file to an SD card, put
-        the SD card in the Pi, power the Pi and you’ll be taken through the installation. See
-        <a href="https://www.raspberrypi.org/learning/noobs-install/worksheet/" class="text-green" target="_blank">
-          Installing Raspbian using NOOBS
-        </a> for details.
-      </p>
-      <p class="padding-top-s">
-        If you use NOOBS then you may want to run it and install Raspbian on each SD
-        card before starting the first project. That way all children will have the
-        same experience and won’t have to wait while the operating system installs.
-      </p>
-      <p class="padding-top-s">
-        Alternatively you can write a Raspbian bootable image to an SD card. See
-        <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" class="text-green" target="_blank">
-          Installing Raspberry Pi Images</a>
-        for instructions.
-      </p>
-      <h5 class="padding-top-s text-heavy text-capitalize">Connecting Everything Up</h5>
       <figure>
-        <img src="../img/pi-hardware-setup.gif" alt="pi-hardware-setup" class="article-img">
+        <img src="../img/sonic-pi-GUI.png" alt="sonic pi" class="custom-img-center">
       </figure>
-      <p class="padding-top-s">
-        We recommend that volunteers work through the first Code Club Raspberry
-        Pi project which includes instructions on connecting up the Raspberry Pi.
-      </p>
-      <p class="padding-top-s">
-        You can also find information in the the
-        <a href="https://www.raspberrypi.org/learning/hardware-guide/quickstart/" class="text-green" target="_blank">
-          Raspberry Pi Hardware Setup Quickstart
-        </a>
-      </p>
-      <h5 class="padding-top-s text-heavy text-capitalize">Saving work</h5>
       <p class="padding-top-m">
-        The Raspberry Pi saves files to its SD card. You can also connect the
-        Raspberry Pi to a local network to save work or use online accounts or
-        USB drives.
+        The Sonic Pi Editor opens a set of buffers that you can easily move between.
       </p>
+      <p class="padding-top-s">
+        The editor has lots of friendly features for beginners including build-in help,
+        syntax highlighting, command completion suggestions and helpful error messages.
+      </p>
+      <p class="padding-top-s">
+        The Log Viewer output window shows what sounds were played when which is useful
+        for understanding complex programs.
+      </p>
+
+      <h5 class="padding-top-s text-heavy text-capitalize">Sound settings</h5>
+      <p class="padding-top-m">
+        You can adjust the volume for Sonic Pi using the ‘Prefs’ menu.
+      </p>
+      <figure>
+        <img src="../img/sonic-pi-prefs.png" alt="screenshot" class="custom-img-center">
+      </figure>
+      <h5 class="padding-top-s text-heavy text-capitalize">Saving and Loading</h5>
+      <p class="padding-top-m">
+        Sonic Pi programs are saved as
+        <code class="text-black bg-lightgray">.txt</code>
+        text files. They can be saved and loaded in the editor.
+      </p>
+      <figure>
+        <img src="sonic-pi-save-load.png" alt="screenshot"><figcaption>screenshot</figcaption>
+      </figure>
+
+
+
+
+
     </section>
 
     <footer class="bg-black">

@@ -47,7 +47,7 @@ CodeClubWorld.makeMap = function() {
       scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    console.log(data);
+//    console.log(data);
     $.each(clubs, function(i, club) {
       var address = club.venue.address;
       if (!address) return;

@@ -29,7 +29,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="../index.html" class="text-green text-bold"><img src="../img/code-club-logo.svg" width="65" height="60"/>Code Club Canada</a>
+        <a href="../index.html" class="text-green text-bold"><img src="../img/icon/code-club-logo.svg" width="65" height="60"/>Code Club Canada</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse navbar-right">
         <ul class="nav nav-pills">
@@ -42,10 +42,20 @@
       </div>
       </div>
     </nav>
-
-    <div class="bg-green after-nav padding-xxl">
-      <h1 class="text-white text-center text-uppercase">Using the Sonic Pi editor</h1>
-    </div>
+    <section class="bg-green after-nav padding-xxl">
+      <header class="page">
+        <div class="container">
+          <a id="back-to-resources" class="pull-left a-hover-underline" href="../technical_info.html">
+            <div class="glyphicon glyphicon-menu-left">
+            </div>
+             back
+          </a>
+        </div>
+        <div class="heading">
+          <h1 class="text-white text-center text-uppercase">Using the Sonic Pi editor</h1>
+        </div>
+      </header>
+    </section>
     <section class="container custom-section-introtoscratch bg-white">
       <h5 class="padding-top-s text-heavy text-capitalize">Downloading and Installing the Sonic Pi Editor</h5>
       <h5 class="padding-top-s text-heavy text-capitalize">Raspberry Pi</h5>
@@ -93,13 +103,41 @@
         text files. They can be saved and loaded in the editor.
       </p>
       <figure>
-        <img src="sonic-pi-save-load.png" alt="screenshot"><figcaption>screenshot</figcaption>
+        <img src="../img/\sonic-pi-save-load.png" alt="screenshot" class="custom-img-center">
       </figure>
-
-
-
-
-
+      <p class="padding-top-s">
+        The editor also automatically saves and loads the contents of the buffers.
+      </p>
+      <h5 class="padding-top-s text-heavy text-capitalize">Recording</h5>
+      <p class="padding-top-m">
+        Sonic Pi also supports recording of audio as
+        <code class="text-black bg-lightgray">.wav</code>
+        files. Click ‘Rec’ then ‘Run’ to start recording and then ‘Rec’ again to stop recording.
+      </p>
+      <figure>
+        <img src="../img/sonic-pi-rec.png" alt="screenshot" class="custom-img-center">
+      </figure>
+      <p class="padding-top-s">
+        Note that you can import .wav files into Scratch as sounds for sprites or the stage.
+      </p>
+      <h5 class="padding-top-s text-heavy text-capitalize">Further resources</h5>
+      <ul class="padding-left-s padding-top-s">
+        <li>
+          <a href="http://www.cl.cam.ac.uk/projects/raspberrypi/sonicpi/media/sonic-pi-cheatsheet.pdf" class="text-green" target="_blank">
+            Sonic Pi Cheatsheet
+          </a>
+        </li>
+        <li>
+          <a href="jumpto.cc/sonic-pi-samples" class="text-green" target="_blank">
+            Sonic Pi Samples
+          </a>
+        </li>
+        <li>
+          <a href="https://www.raspberrypi.org/learning/getting-started-with-sonic-pi/" class="text-green" target="_blank">
+            Getting Started with Sonic Pi (Raspberry Pi Foundation)
+          </a>
+        </li>
+      </ul>
     </section>
 
     <footer class="bg-black">

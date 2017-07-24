@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="Pengkim Sy">
+  <title>INTRODUCTION TO SCRATCH</title>
+  <link rel="icon" href="../../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="../style.css" rel="stylesheet">
+  <link href="../style2.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+</head>
+<body class="bg-lightgray">
+  <nav class="text-xs navbar navbar-custom navbar-fixed-top">
+    <div class="container padding-small">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="../index.html" class="text-green text-bold"><img src="../img/icon/code-club-logo.svg" width="65" height="60"/>Code Club Canada</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse navbar-right">
+        <ul class="nav nav-pills">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Start a Club</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="workshop.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <section class="bg-green after-nav padding-xxl">
+      <header class="page">
+        <div class="container">
+          <a id="back-to-resources" class="pull-left a-hover-underline" href="../technical_info.html">
+            <div class="glyphicon glyphicon-menu-left">
+            </div>
+             back
+          </a>
+        </div>
+        <div class="heading">
+          <h1 class="text-white text-center text-uppercase">Using the micro:bit editor</h1>
+        </div>
+      </header>
+    </section>
+    <section class="container custom-section-introtoscratch bg-white">
+      <p class="padding-top-m">
+        There are
+        <a href="http://microbit.org/code/" target="_blank" class="text-green" >a number of different micro:bit editors</a>
+        available, and our projects make use of the
+        <a href="https://makecode.microbit.org" target="_blank" class="text-green">MakeCode (PXT)</a>
+        blocks and JavaScript editor. You can create a new project at
+        <a href="http://jumpto.cc/pxt-new" target="_blank" class="text-green">jumpto.cc/pxt-new</a>.
+      </p>
+      <figure>
+        <img src="../img/pxt.png" alt="MakeCode (PXT) Editor" class="custom-img-center">
+      </figure>
+      <p class="padding-top-m">
+        You can also try out the MakeCode project embedded below:
+      </p>
+      <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;">
+        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:54730-38087-92441-76499" frameborder="0" sandbox="allow-popups allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    <p class="padding-top-m">
+      The sections below show how to test, download and save projects.
+      <strong>
+        The first micro:bit project <a href="http://jumpto.cc/badge" class="text-green" target="_blank">
+        Interactive Badge</a>
+        includes information on using the MakeCode (PXT) editor.
+      </strong>
+    </p>
+    <p class="padding-top-s">
+      Note that earlier versions of the Code Club micro:bit projects used the
+      <a href="https://www.microbit.co.uk/app/#create:tomwku" class="text-green" target="_blank">Code Kingdoms Editor</a>.
+      These projects can still be accessed as
+      <a href="https://codeclubprojects.org/en-GB/archived/" class="text-green" target="_blank">Archived Projects</a>.
+    </p>
+    <p class="padding-top-s">
+      See also: (micro:bit.org Terms of Use)[http://microbit.org/terms-of-use/]
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">Testing scripts</h5>
+    <p class="padding-top-m">
+      You can test your micro:bit scripts using the emulator.
+    </p>
+    <figure>
+      <img src="../img/pxt-emulator.png" alt="PXT Editor" class="custom-img-center">
+    </figure>
+    <p class="padding-top-m">
+      Your scripts will run and update automatically. You can also stop and restart scripts.
+    </p>
+    <p class="padding-top-s">
+      You’ll then be able to test your project without using a physical micro:bit.
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">Downloading and Transferring scripts</h5>
+    <p class="padding-top-s">
+      To transfer a script, you’ll first need to connect your micro:bit to your computer,
+      via a USB cable. Your micro:bit will then appear in your file manager, just like
+      any other removable storage device.
+    </p>
+    <p class="padding-top-s">
+      Clicking ‘Download’ will download a .hex file to your computer and save it in your
+      Downloads directory (this is usually called Downloads, but different configurations
+      are possible) or to a location of your choice via ‘Save As’.
+    </p>
+
+    <figure>
+      <img src="../img/pxt-download.png" alt="screenshot" class="custom-img-center">
+    </figure>
+    <p class="padding-top-m">
+      You need to transfer the downloaded ‘.hex’ file to the micro:bit drive.
+      There are several ways of doing this.
+    </p>
+    <p class="padding-top-s">
+      Whichever way you use, an LED will flash on the back of the micro:bit
+      while the script is being transferred. When the LED stops flashing you
+      can try out the script.
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">BBC micro:bit uploader</h5>
+    <p class="padding-top-m">
+      For Microsoft Windows you can use the
+      <a href="https://makecode.microbit.org/uploader" class="text-green" target="_blank">BBC micro:bit uploader</a>
+      program to copy the latest ‘.hex’ file to the micro:bit automatically. The uploader
+      can be downloaded and then run once at the start of each programming session.
+    </p>
+    <p class="padding-top-s">
+      If the uploader is running then a script will automatically be flashed to the micro:bit
+      after clicking ‘Download’ and saving the ‘.hex’ file to the Downloads directory.
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">Without the BBC micro:bit uploader</h5>
+    <p class="padding-top-m">
+      Unfortunately, different browsers and operating systems use different approaches
+      to saving downloaded files. You can find detailed instructions for transferring
+      files using different browsers in
+      <a href="https://makecode.microbit.org/device/usb" class="text-green" target="_blank">
+        Uploading programs on your micro:bit
+      </a>.
+    </p>
+    <p class="padding-top-s">
+      Instructions for the most common scenarios are included in the first micro:bit project:
+      <a href="https://codeclubprojects.org/en-GB/microbit/interactive-badge/" class="text-green" target="_blank">
+        Interactive Badge
+      </a>.
+    </p>
+    <p class="padding-top-s">
+      We recommend that you find out which way works best for your web browser of choice and
+      local setup and show that method to your Code Club.
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">File Manager</h5>
+    <p class="padding-top-m">
+      You can drag and drop a .hex file from the Downloads
+      directory onto the micro:bit drive in your file manager.
+    </p>
+    <p class="padding-top-m">
+      Tip: Sort files by ‘Date modified’ to get the most recent file to the top.
+    </p>
+
+    <h5 class="padding-top-s text-heavy text-capitalize">Saving scripts</h5>
+    <h5 class="padding-top-m text-heavy text-capitalize">Saving scripts without a login</h5>
+    <p class="padding-top-s">
+      You don’t need an account to save your scripts. Just give your file a name and
+      click the save icon to save your script as a ‘.hex’ file on the local file system.
+      This saves the PXT project as part of the ‘.hex’ file.
+    </p>
+    <figure>
+      <img src="../img/pxt-save.png" alt="screenshot" class="custom-img-center">
+    </figure>
+    <p class="padding-top-s">
+      Projects are also saved in local browser storage though this depends
+      on your local setup permitting this.
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">Loading scripts</h5>
+    <p class="padding-top-s">
+      Click ‘Projects’ at the top of the editor to see your scripts.
+      You can then click ‘Import File’ to load your .hex file to
+      continue working on it.
+    </p>
+    <figure>
+      <img src="../img/pxt-import.png" alt="screenshot" class="custom-img-center">
+    </figure>
+    <p class="padding-top-m">
+      To go back to a script, just click on it.
+    </p>
+    <h5 class="padding-top-s text-heavy text-capitalize">Sharing Projects</h5>
+    <p class="padding-top-s">
+      Please be aware that projects can be shared by clicking on the ‘Share’
+      button at the top of the editor so children should be reminded not
+      to include personal information.
+    </p>
+
+
+
+  </section>
+
+
+    <footer class="bg-black">
+      <div class="container width-950 padding-m">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <h5 class="text-uppercase">Start a club</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Venue</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Working with Children</a></li>
+                <li><a href="#">Tips</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 padding-bot-xxl">
+              <h5 class="text-uppercase">About</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About Code Club</a></li>
+                <li><a href="#">Support us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <h5 class="text-uppercase">Help</h5>
+              <ul class="list-unstyled">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <h5 class="text-uppercase">Resources</h5>
+              <ul class="list-unstyled">
+                <li><a href="">Skill Map</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Technical Information</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <section class="bg-black padding-xs width-1100 margin-auto">
+        <div class="social-links social-links-m pull-right">
+          <a href="https://www.facebook.com/KidsCodeJeunesse" target="_blank">
+            <i class="d-block fa fa-facebook bg-white social-black-hover"></i>
+          </a>
+          <a href="https://twitter.com/kidscoding" target="_blank">
+            <i class="d-block fa fa-twitter bg-white social-black-hover"></i>
+          </a>
+        </div>
+        <p class="text-white">&copy; Code Club Canada 2017</p>
+      </section>
+    </footer>
+  </body>
+  </html>

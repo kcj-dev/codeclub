@@ -55,6 +55,9 @@ h5{
   font-size: 16px;
 }
 */
+a{
+  color: #479946;
+}
 a:hover, input:hover, button:hover {
   color: white;
   text-decoration: underline;
@@ -105,7 +108,7 @@ strong{
 }
 
 .bg-blue {
-  background-color: #6fb3c6;
+  background-color: #5290d2;
   color: white;
 }
 .bg-darkwhite{
@@ -172,6 +175,9 @@ strong{
 .btn{
   white-space: pre-wrap;
 }
+.btn:hover{
+  background-color: white;
+}
 
 .input{
   color: black;
@@ -210,6 +216,7 @@ strong{
 .btn-green{
   background-color: #479946;
   color: white;
+  border: 3px solid #479946;
   border-radius: 30px;
 }
 
@@ -283,7 +290,9 @@ strong{
 .height-200{
   max-height: 200px;
 }
-
+.height-400{
+  height: 400px;
+}
 .height-450{
   height: 450px;
 }

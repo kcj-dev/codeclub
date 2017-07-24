@@ -60,7 +60,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
             position: latLng,
-            icon: '/img/marker.png'
+            icon: '../img/marker.png'
           });
 
       markers.push(marker);
@@ -93,7 +93,7 @@ CodeClubWorld.makeMap = function() {
             );
           }
           content.push('<a class="btn btn-border-green" href="https://www.codeclub.org.uk/start-a-club/volunteers">Volunteer</a>');
-        } else {          
+        } else {
           content.push('<p><span class="glyphicon glyphicon-remove"></span> Looking for volunteers</p>');
           if (club.venue.url) {
             content.push(
@@ -120,7 +120,7 @@ CodeClubWorld.makeMap = function() {
     // mcOptions "as is"
     var mcOptions = {
       gridSize: 30,
-      imagePath: '/img/m'
+      imagePath: 'img/m'
     };
 
    var markerCluster = new MarkerClusterer(map, markers, mcOptions);

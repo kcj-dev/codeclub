@@ -60,7 +60,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
             position: latLng,
-            icon: '../img/marker.png'
+            icon: 'img/marker.png'
           });
 
       markers.push(marker);

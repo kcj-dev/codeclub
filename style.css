@@ -45,6 +45,8 @@ header a:hover{
 h1, h2, h3, h4, h5, h6, a{
   font-family: 'museo-500';
   line-height: 1.5;
+  margin-top: 17px;
+  margin-bottom: 12.5px;
 }
 /*
 a{
@@ -75,11 +77,25 @@ a[class^="text-green"]:hover{
 input[type^="email"]:hover, input[type^="text"]:hover{
   color: black;
 }
-
+p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 strong{
   font-weight: 900;
 }
-
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
 .after-nav {
   margin-top: 60px;
 }

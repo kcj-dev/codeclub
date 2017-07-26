@@ -162,13 +162,13 @@
   font-weight: 700;
   box-sizing: border-box;
 }
-.test {
+.tescustom-resources-img1 {
   max-width: 130px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.test2 {
+.custom-resources-img2 {
   width: 340px;
   display: block;
   margin-left: auto;

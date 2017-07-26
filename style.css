@@ -160,6 +160,9 @@ strong{
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
 }
+.bg-img{
+  background-image: url('img/Canada - FULL (1).png');
+}
 .btn{
   white-space: pre-wrap;
 }

@@ -162,3 +162,7 @@
   font-weight: 700;
   box-sizing: border-box;
 }
+.img-size-fit {
+  height: 180px;
+  width: 125px;
+}

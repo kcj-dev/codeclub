@@ -21,6 +21,8 @@
   <script src="scripts/markerclusterer/markerclusterer.js" type="text/javascript"></script>
   <script src="scripts/map.js" type="text/javascript"></script>
 
+  <script src="scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
+  <script src="scripts/form.js" type="text/javascript"></script>
 </head>
 
 <body class="text-s">
@@ -121,7 +123,7 @@
                or you can use the form below to search for clubs in your region.
             </p>
             <select name="region" id="region-search" class="select">
-              <option value="0" data-z="3" data-lat="52.0" data-lng="-101.5">All</option>
+              <option value="0" data-z="3" data-lat="52.0" data-lng="-95.5">All</option>
               <option value="1" data-z="6" data-lat="53.9996" data-lng="-116.5765">Alberta</option>
               <option value="2" data-z="7" data-lat="49.95" data-lng="-122.5">British Columbia</option>
               <option value="3" data-z="7" data-lat="50.7609" data-lng="-98.8139">Manitoba</option>
@@ -156,9 +158,10 @@
         <h2 class="padding-xxs">Newsletter</h2>
         <p>Want all of the latest news and updates about Code Club Canada?</p>
         <p>Sign up for our newsletter!</p>
-        <form class="padding-xs" action="" method="post">
-          <input class="input" type="email" placeholder="E-mail"/>
-          <input class="btn btn-green border-s border-white" type="submit" value="Sign-up"/>
+        <form id="form" class="padding-xs" role="form">
+          <input class="input" type="text" placeholder="E-mail" />
+          <input class="btn btn-green border-s border-white" type="button" value="Sign-up"/>
+          <div class="error"></div>
         </form>
       </div>
       <div class="col-sm-5 col-xs-6 padding-m">

@@ -301,7 +301,10 @@ strong{
   margin-right: auto;
 }
 
-
+.error{
+  color: #b31313;
+  font-weight: bold;
+}
 .height-200{
   max-height: 200px;
 }

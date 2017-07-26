@@ -15,6 +15,12 @@
 .padding-top-l {
   padding-top: 75px;
 }
+.margin-bot-xl {
+  margin-bottom: 50px;
+}
+.margin-top-xl {
+  margin-top: 30px;
+}
 .btn-alt-link {
     background-color: inherit;
     padding-left: 23px;
@@ -135,4 +141,7 @@
 }
 .custom-hover-text-green:hover {
   color: #479946;
+}
+.margin-custom-30 {
+  margin-top: -30px;
 }

@@ -162,7 +162,15 @@
   font-weight: 700;
   box-sizing: border-box;
 }
-.img-size-fit {
-  height: 180px;
-  width: 125px;
+.test {
+  max-width: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.test2 {
+  width: 340px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

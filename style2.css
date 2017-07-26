@@ -163,14 +163,18 @@
   font-weight: 700;
   box-sizing: border-box;
 }
-.custom-resources-img1 {
+.custom-homepage-headomg {
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.custom-resources-img2 {
   max-width: 95px;
   display: block;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
 }
-.custom-resources-img2 {
+.custom-resources-img1 {
   width: 280px;
   display: block;
   margin-left: auto;
@@ -178,4 +182,7 @@
 }
 .text-normal {
   font-weight: thin;
+}
+.t {
+  margin-top: 150px ;
 }

@@ -13,8 +13,9 @@ $(function() {
   CodeClubWorld.makeMap();
 
   CodeClubWorld.region = document.getElementById('region-search');
-  CodeClubWorld.region.onchange = CodeClubWorld.makeMap;
-
+  if(CodeClubWorld.region){
+    CodeClubWorld.region.onchange = CodeClubWorld.makeMap;
+  }
   CodeClubWorld.infobox = new google.maps.InfoWindow();
 
 });
@@ -32,21 +33,28 @@ CodeClubWorld.makeMap = function() {
     headers     : { 'Authorization': 'Bearer ' + CodeClubWorld.api_token, 'Accept': 'application/vnd.codeclubworld.v'+CodeClubWorld.api_version }
   })
   .done( function(data) {
-    var clubs = data,
+    var clubs = data, lat, lng, dataZ, LatLng
         markers = [];
 
-    var lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
-    var lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
-    var LatLng = new google.maps.LatLng(lat, lng);
+    if(CodeClubWorld.region){
+      lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
+      lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
+      dataZ = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-z"));
+      LatLng = new google.maps.LatLng(lat, lng);
+    } else {
+      dataZ = 4;
+      LatLng = new google.maps.LatLng(52.0, -101.5);
+    }
 
-    var dataZ = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-z"));
-
+//    console.log(LatLng.toString());
     var map = new google.maps.Map(el, {
       zoom: dataZ,
       center: LatLng,
       scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+
+    console.log(LatLng.toString());
 //    console.log(data);
     $.each(clubs, function(i, club) {
       var address = club.venue.address;

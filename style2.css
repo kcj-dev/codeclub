@@ -18,6 +18,15 @@
 .margin-bot-xl {
   margin-bottom: 50px;
 }
+.margin-top-m {
+  margin-top: 15px;
+}
+.margin-top-s {
+  margin-top: 10px;
+}
+.font-normal {
+  font-weight: normal;
+}
 .margin-top-xl {
   margin-top: 30px;
 }

@@ -157,3 +157,8 @@
 .margin-custom-30 {
   margin-top: -30px;
 }
+.heading {
+  font-size: 6.25rem;
+  font-weight: 700;
+  box-sizing: border-box;
+}

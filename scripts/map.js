@@ -43,7 +43,7 @@ CodeClubWorld.makeMap = function() {
       LatLng = new google.maps.LatLng(lat, lng);
     } else {
       dataZ = 4;
-      LatLng = new google.maps.LatLng(52.0, -101.5);
+      LatLng = new google.maps.LatLng(52.0, -95.5);
     }
 
 //    console.log(LatLng.toString());

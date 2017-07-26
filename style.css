@@ -618,7 +618,12 @@ strong{
   width: 45px;
   line-height: 1.8;
   font-size: 25px;
+  border: 1px solid white;
 }
+.social-links a:hover {
+  text-decoration: none;
+}
+
 .social-links .custom-size{
   height: 30px;
   width: 30px;
@@ -628,11 +633,13 @@ strong{
 .social-hover:hover{
   background-color: white;
   color: #479946;
+  text-decoration: none;
 }
 .social-black-hover:hover{
   background-color: #333333;
   color: white;
   border: 1px solid white;
+  text-decoration: none;
 }
 /*
 .fa-facebook:hover{

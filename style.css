@@ -308,6 +308,9 @@ strong{
 .height-200{
   max-height: 200px;
 }
+.height-220{
+  height: 220px;
+}
 .height-400{
   height: 400px;
 }

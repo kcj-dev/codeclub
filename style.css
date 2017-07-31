@@ -57,11 +57,12 @@ h5{
   font-size: 16px;
 }
 */
+
 a{
   color: #479946;
 }
 a:hover, input:hover, button:hover {
-  color: white;
+  color: #689968;
   text-decoration: underline;
   /*-webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;*/
@@ -71,7 +72,7 @@ a[class^="text-orange"]:hover{
   text-decoration: none;
 }
 a[class^="text-green"]:hover{
-  color: #333333;
+  color: #689968;
   text-decoration: none;
 }
 input[type^="email"]:hover, input[type^="text"]:hover{
@@ -268,6 +269,9 @@ strong{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
+.border-top-xs{
+  border-top: 1px solid;
+}
 .border-bot-xs{
   border-bottom: 1px solid;
 }
@@ -357,6 +361,9 @@ strong{
 }
 .line-H-40px {
   line-height: 40px;
+}
+.line-h-0{
+  line-height: 0.7;
 }
 
 .small-width {
@@ -463,6 +470,9 @@ strong{
 .padding-xxl{
   padding: 95px;
 }
+.padding-bot-xs{
+  padding-bottom: 10px;
+}
 .padding-bot-s{
   padding-bottom: 15px;
 }
@@ -490,6 +500,10 @@ strong{
 .padding-x-s{
   padding-left: 10px;
   padding-right: 10px;
+}
+.padding-y-xxs{
+  padding-top:2px;
+  padding-bottom:2px;
 }
 .padding-y-xs{
   padding-top: 5px;
@@ -767,14 +781,15 @@ footer input[type^="email"]{
   font-size: 17px;
 }
 
-.form-block{
-  display: block;
+.form-inline{
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .form-control{
   display: inline;
-  max-width: 150px;
-  color: #6fb3c6;
+  width: 200px;
+  border-color: #479946;
   border-radius: 0;
   padding: 0 5px 0 5px;
 }

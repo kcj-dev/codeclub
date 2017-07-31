@@ -17,6 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
+  <script src="scripts/remove_images.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -35,16 +36,29 @@
         <ul class="nav nav-pills">
           <li><a href="about.html">About</a></li>
           <li><a href="startaclub.html">Start a Club</a></li>
-          <li class="active"><a href="#">Resources</a></li>
+          <li class="active"><a href="resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="row bg-green after-nav padding-xl">
-      <h1 class="text-white text-center text-capitalize heading">resources</h1>
-  </div>
+  <section class="bg-green after-nav">
+    <div class="container padding-l">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <img src="img/resources-background-blocks.png" class="custom-img-center">
+        </div>
+        <div class="col-md-6 col-sm-6 padding-top-s">
+          <h1 class="text-center text-capitalize heading">Resources</h1>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <img src="img/resources-background-computer.png" class="custom-img-center">
+        </div>
+      </div>
+    </div>
+  </section>
   <section>
     <div class="container padding-m text-s">
       <div class="row">
@@ -53,8 +67,8 @@
             <img class="img img-responsive border-top-radius" src="img/card_skillsmap.png" alt="Volunteers graphic"/>
             <div class="padding-s text-center">
               <h4 class="text-uppercase">Skills map</h4>
-              <p>If you would like to volunteer at a local community venue, using the Code Club projects to teach children to code.</p>
-              <a class="btn btn-border-green" href="curriculum.html">View Skills Map</a>
+              <p>Use the skills map to see which skills each of the projects cover and what order is best to follow to build on learned skills.</p>
+              <a class="btn btn-border-green" href="skillsmap.html">View Skills Map</a>
             </div>
           </div>
         </div>
@@ -72,8 +86,8 @@
           <div class="border-xs border-radius">
             <img class="img img-responsive border-top-radius" src="img/card_technicalinfo.png" alt="technical info image"/>
             <div class="padding-s text-center">
-              <h4 class="text-uppercase">Tech Info</h4>
-              <p>If you work at a school, library, museum or community venue and you would like to find a volunteer to help you run a Code Club.</p>
+              <h4 class="text-uppercase">Technical Info</h4>
+              <p>Use these introductory and technical guides relating to all our courses to get you ready and answer your questions.</p>
               <a class="btn btn-border-green" href="technical_info.html">View Technical Info</a>
             </div>
           </div>
@@ -113,7 +127,7 @@
           <div class="col-md-3 col-sm-3 col-xs-6">
             <h5 class="text-uppercase">Resources</h5>
             <ul class="list-unstyled">
-              <li><a href="curriculum.html">Skill Map</a></li>
+              <li><a href="skillsmap.html">Skill Map</a></li>
               <li><a href="projects.html">Projects</a></li>
               <li><a href="technical_info.html">Technical Information</a></li>
             </ul>

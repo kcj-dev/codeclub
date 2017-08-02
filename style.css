@@ -110,7 +110,7 @@ strong{
   color: white;
 }
 .bg-gray {
-  background-color: #e2e2e2;
+  background-color: #f3f4f7;
   color: #463d3d;
 }
 
@@ -393,7 +393,9 @@ strong{
 .margin-bot{
   margin-bottom: 25px;
 }
-
+.margin-top-m{
+  margin-top: 20px;
+}
 .map{
   margin-top: 20px;
   border: 12px solid white;

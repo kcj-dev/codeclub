@@ -528,7 +528,7 @@ strong{
 }
 
 .text-xxl{
-  font-size: 50px;
+  font-size: 6.25rem;
 }
 .text-xl{
   font-size: 36px;
@@ -537,7 +537,7 @@ strong{
   font-size: 26px;
 }
 .text-m{
-  font-size: 19px;
+  font-size: 22px;
 }
 .text-s{
   font-size: 16px;
@@ -845,4 +845,9 @@ footer input[type^="email"]{
   position: absolute;
   width: 50px;
   height: 50px;
+}
+
+
+#mc-embedded-subscribe{
+  margin: 0;
 }

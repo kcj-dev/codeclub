@@ -679,6 +679,14 @@ strong{
   width: 200px;
 }
 
+.v-bottom {
+  position: absolute;
+  bottom: 20px;
+  /* right: 0; */
+  left: 25%;
+  max-width: 145px;
+}
+
 .width-500{
   max-width: 500px;
 }

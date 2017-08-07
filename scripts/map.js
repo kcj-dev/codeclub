@@ -36,6 +36,7 @@ CodeClubWorld.makeMap = function() {
     var clubs = data, lat, lng, dataZ, LatLng
         markers = [];
 
+  //  console.log(clubs);
     if(CodeClubWorld.region){
       lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
       lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
@@ -111,12 +112,8 @@ CodeClubWorld.makeMap = function() {
             );
           }
         }
-
-
-
         content = content.join('');
 
-      //  console.log(content);
         infobox.setContent(content);
         infobox.open(map, marker);
       });

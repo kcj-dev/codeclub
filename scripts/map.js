@@ -113,7 +113,6 @@ CodeClubWorld.makeMap = function() {
           }
         }
         content = content.join('');
-
         infobox.setContent(content);
         infobox.open(map, marker);
       });

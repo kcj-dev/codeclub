@@ -33,6 +33,10 @@
 .padding-top-xl {
   padding-top: 50px;
 }
+
+.padding-bottom-m {
+  padding-bottom: 20px;
+}
 .btn-alt-link {
     background-color: inherit;
     padding-left: 23px;

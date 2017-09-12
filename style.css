@@ -863,3 +863,19 @@ footer input[type^="email"]{
 #mc-embedded-subscribe{
   margin: 0;
 }
+
+/* FRENCH */
+
+#french:before {
+  background-color: green;
+}
+
+#french {
+  color: red;
+  background-color: green;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+

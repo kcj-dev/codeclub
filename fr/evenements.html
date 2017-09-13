@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="Pengkim Sy">
+  <title>Events - Code Club Canada</title>
+  <link rel="icon" type="image/png" href="../img/icon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../img/icon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="../style.css" rel="stylesheet">
+  <link href="../style2.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <script src="scripts/filter.js" type="text/javascript"></script>
+</head>
+
+<body class="text-s bg-gray">
+    <nav class="text-xs navbar navbar-custom navbar-fixed-top">
+            <!-- EN -->
+            <header id="language" class="bg-gray">
+                <div class="container">
+                    <ul class="list-inline text-right text-xs">
+                    <li class="active"><a href="../events.html">EN</a></li> |
+                    <li><a href="evenements.html">FR</a></li>
+                    </ul>
+                </div>
+                </header>
+            <!-- MENU -->
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="text-green text-bold text-uppercase text-s"><img src="../img/icon/code-club-logo.svg" width="65" height="60"/>Canada</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav nav-pills">
+                <li><a href="apropos.html">À PROPOS</a></li>
+                <li><a href="commencer.html">Démarrez Un Club</a></li>
+                <li ><a href="projets.html">Projets</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signer.html">Signez</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+  <section class="after-nav bg-green">
+    <h1 class="padding-xxl text-bold text-xxl text-center">Événements</h1>
+  </section>
+  <section class="">
+    <div class="container padding-s bg-white border-radius">
+      <div class="row row-centered">
+        <div class="col-md-8 col-centered">
+          <p class="text-center">Restez à jour avec Code Club Canada! Voir ci-dessous pour les prochains événements pour les enfants et les ateliers pour formation des enseignants dans votre région.
+          </p>
+          <div id="filter" class="text-center padding-m">
+            <div class="padding-x-s form-group d-inline">
+              <label for="province">Province</label>
+              <select id="province" class="form-control">
+                <option value="" selected>Tous</option>
+                <option value="ab">Alberta</option>
+                <option value="bc">Colombie britannique</option>
+                <option value="mb">Manitoba</option>
+                <option value="nb">Nouveau-Brunswick</option>
+                <option value="nl">Newfoundland and Labrador</option>
+                <option value="nt">Terre-Neuve-et-Labrador</option>
+                <option value="ns">Nouvelle-Écosse</option>
+                <option value="nu">Nunavut</option>
+                <option value="on">Ontario</option>
+                <option value="pe">Île-du-Prince-Édouard</option>
+                <option value="qc">Québec</option>
+                <option value="sk">Saskatchewan</option>
+                <option value="yt">Yukon</option>
+              </select>
+            </div>
+            <div class="padding-x-s form-group d-inline">
+              <label for="month">Mois</label>
+              <select id="month" class="form-control">
+                <option value="" selected>Tous</option>
+                <option value="january">Janvier</option>
+                <option value="february">Février</option>
+                <option value="march">Mars</option>
+                <option value="april">Abril</option>
+                <option value="may">Mai</option>
+                <option value="june">Juin</option>
+                <option value="july">Juillet</option>
+                <option value="august">Août</option>
+                <option value="september">Septembre</option>
+                <option value="october">Octobre</option>
+                <option value="november">Novembre</option>
+                <option value="december">Décembre</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EVENTS -->
+      <div class="row row-centered">
+          <div class="col-md-10 col-centered list-item padding-m border-top-xs border-black">
+            <h4 class="text-green">LANCEMENT DE CODE CLUB</h4>
+            <h5 class="text-green line-h-0">
+              Date:
+              <span class="text-black date">
+                <span class="october"></span>dimanche le 17 septembre, 2017
+              </span>
+            </h5>
+            <h5 class="text-green line-h-0 padding-bot-xs">
+              Lieu:
+              <span class="text-black location">
+                <span class="qc"></span> <a href="http://ville.montreal.qc.ca/portal/page?_pageid=7497,80843589&_dad=portal&_schema=PORTAL">Bibliothèque Benny</a>
+              </span>
+            </h5>
+            <div class="border-xs border-radius border-green">
+              <div class="padding-xs">
+                <p>
+                    Kids Code Jeunesse est fier d’annoncer le lancement de Code Club à travers le Canada!
+                    Nous vous invitons, vous et vos enfants, à participer aux célébrations.
+                    Venez vous joindre à nous dimanche le 17 septembre au Benny Fab, situé dans la Bibliothèque Benny, pour un atelier gratuit sur la programmation informatique et démos. La journée débutera avec un atelier Scratch de 2 heures pour enfants, basé sur le livre de Chris Hadfield,<a href="https://www.goodreads.com/book/show/28250985-the-darkest-dark">The Darkest Dark</a>, qui fera partie de la Semaine de la culture scientifique. 
+                    
+                <p>
+                    Les activités se poursuivront ensuite avec des démos d’outils informatique pour des familles voulant apprendre à programmer avec l’aide de HTML, Python, Sense HAT, Raspberry Pi et Microbit, provenant tous des Projets Code Club.
+                    Notre équipe du Code Club sera aussi présente pour vous aider avec vos questions concernant l’éducation sur les habiletés digitales pour votre enfant au Canada.
+                </p>
+                        
+                </p>
+                <h5 class="text-green padding-bot-xs">
+                    Horaire:
+                  <p>
+                    11h00-13h00: Atelier Scratch: The Darkest Dark (pour les enfants de 8 à 12) L’enregistrement est requis, l’espace est limité: procurez vos billets ici<br>
+                  </p>
+                  <p>
+                    13h00-14h00: Démos de matériel informatique du Code Club (pour tous les âges, ouvert à tout le public)<br>
+                  </p>
+                  <p>
+                    14h00-15h00: Session d’information avec le coordinateur régional de Montréal du Code Club Canada pour des bénévoles et lieux potentiels. Pour plus d’informations consultez notre groupe Meetup
+                  </p>
+                  </h5>
+                  <p>
+                        Pour de plus amples informations sur le lancement de Code Club Canada, veuillez contacter:
+                        <a href="mailto:'bry@kidscodejeunesse.org'">bry@kidscodejeunesse.org</a>
+                        Bry LeBlanc, Coordonnatrice des communications                    
+                      </p>
+              </div>
+            </div>
+            <a class="text-s btn btn-green" href="#">inscrivez-vous</a>
+          </div>
+      <div class="row row-centered">
+        <div class="col-md-10 col-centered list-item padding-m border-top-xs border-black">
+          <h4 class="text-green">MOONHACK</h4>
+          <h5 class="text-green line-h-0">
+            Date:
+            <span class="text-black date">
+              <span class="october"></span>15 Août, 2017
+            </span>
+          </h5>
+          <h5 class="text-green line-h-0 padding-bot-xs">
+            Location:
+            <span class="text-black location">
+              <span class="on"></span>Online - across the world
+            </span>
+          </h5>
+          <div class="border-xs border-radius border-green">
+            <div class="padding-xs">
+              <p>
+                    En 2016, <a href="https://twitter.com/hashtag/moonhack?lang=en">#Moonhack</a> a brisé un record mondial en ayant 10,207 enfants australiens qui codaient la même journée. Cette année, Code Club Australia se mondialise en tentant d’avoir plus de 100,000 enfants à travers le monde qui coderont pour Moonhack!
+                    Un réseau international de Code Clubs incluant @CodeClubCanada @CodeClubSpain @CodeClubNZ @CodeClubBrasil @CodeClubFrance @CodeClubBD se joignent à l’événement du record mondial de @CodeClubAus Moonhack pour les enfants âgés de 8 à 18 ans!  
+                    Inscrivez-vous aujourd’hui afin de vous joindre à l’amusement mondial le 15 août. Vous pourrez utiliser les projets multilingues gratuits de Moonhack ou créer votre propre projet basé sur le thème de la lune.
+                    Programmez toute la journée et soumettez votre projet à temps afin qu’il fasse partie du record mondial. Apprenez-en plus aujourd’hui afin d’être prêt pour le jour du lancement!
+                    Moonhack 2017 sera mis sur pied à partir de la Nouvelle-Zélande, le pays le plus près de la ligne internationale de changement de date. L’événement se propagera ensuite autour du globe pour la journée du 15 août dans chaque pays.
+                    Dites-nous d'où vous participerez à Moonhack avec les hashtags #Moonhack #Getkidscoding
+              </p>
+            </div>
+          </div>
+          <a class="text-s btn btn-green" href="https://www.codeclubworld.org/get-involved/register-a-code-club/">inscrivez-vous</a>
+        </div>
+        
+        <!-- EVENT -->
+        <!-- <div id="notFound" class="row border-top-xs border-black text-center">
+          <h4 class="text-green padding-bot-s font-inherit">Nothing found</h4>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black padding-m">
+        <div class="container width-950 padding-m">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <h5 class="text-uppercase">À propos</h5>
+              <ul class="list-unstyled">
+                <li><a href="apropos.html">
+                  À propos de Code Club</a></li>
+                <!-- <li><a href="#">Support Us</a></li> -->
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 padding-bot-xxl">
+              <h5 class="text-uppercase">Démarrer un club</h5>
+              <ul class="list-unstyled">
+                <li><a href="benevole.html">Bénévole</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="venues.html">Lieux</a></li>
+                <li><a href="professeurs.html">Enfants</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <h5 class="text-uppercase">Des questions?</h5>
+              <ul class="list-unstyled">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <h5 class="text-uppercase">Être impliqué</h5>
+              <ul class="list-unstyled">
+                <li><a href="signin.html">Se connecter</a></li>
+                <li><a href="registre.html">Registre</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="bg-black padding-xs width-1100 margin-auto">
+          <div class="social-links social-links-m pull-right">
+            <a href="https://www.facebook.com/codeclubcanada" target="_blank">
+              <i class="d-block fa fa-facebook bg-white social-black-hover"></i>
+            </a>
+            <a href="https://twitter.com/codeclubcanada" target="_blank">
+              <i class="d-block fa fa-twitter bg-white social-black-hover"></i>
+            </a>
+          </div>
+          <p class="text-white">&copy; Code Club Canada 2017</p>
+        </section>
+      </footer>
+</body>
+
+</html>

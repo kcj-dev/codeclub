@@ -219,6 +219,19 @@
     left: 50%;
     margin-left: -80px;
 }
+.padding-mid{
+  padding: 2%;
+}
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
 
 /* Popup arrow */
 .popup .popuptext::after {
@@ -248,4 +261,4 @@
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
-} 
+}

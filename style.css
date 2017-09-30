@@ -410,6 +410,11 @@ strong{
   width: 100%;
   height: 600px;
 }
+
+.mininav .active {
+  border: 3px solid green;
+  border-radius: 15px;
+}
 .navbar-custom {
   background-color: white;
   color: #ffffff;

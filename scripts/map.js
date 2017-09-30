@@ -56,8 +56,14 @@ CodeClubWorld.makeMap = function() {
     });
 
   //  console.log(LatLng.toString());
-//    console.log(data);
+  //  console.log(data);
     $.each(clubs, function(i, club) {
+      
+      // console.log(club.name);
+      // if(/^[eE]+/.test(club.name)) {
+      //   console.log(club);
+      // }
+
       var address = club.venue.address;
       if (!address) return;
 
@@ -88,10 +94,6 @@ CodeClubWorld.makeMap = function() {
           content.push('<p>City: ' + club.venue.address.city + '</p>');
         }
 
-        if (club.venue.address.country) {
-          content.push('<p>' + club.venue.address.country.name + '</p>');
-        }
-
         if (club.looking_for_volunteer == true) {
           content.push('<p><span class="glyphicon glyphicon-ok"></span> Looking for volunteers</p>');
           if (club.venue.url) {
@@ -101,17 +103,13 @@ CodeClubWorld.makeMap = function() {
               '</a>'
             );
           }
-          content.push('<a class="btn btn-border-green" href="https://www.codeclub.org.uk/start-a-club/volunteers">Volunteer</a>');
-        } else {
-          content.push('<p><span class="glyphicon glyphicon-remove"></span> Looking for volunteers</p>');
-          if (club.venue.url) {
-            content.push(
-              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
-                club.venue.url +
-              '</a>'
-            );
-          }
+          content.push('<a class="btn btn-border-green" target="_blank" href="http://codeclub.ca/volunteer.html">Volunteer</a>');
+        } 
+
+        if (club.venue.url) {
+          content.push('<a target="_blank" href="' + club.venue.url + '">' + club.venue.url + '</a>');
         }
+
         content = content.join('');
         infobox.setContent(content);
         infobox.open(map, marker);

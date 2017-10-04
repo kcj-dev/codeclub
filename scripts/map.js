@@ -53,8 +53,6 @@ CodeClubWorld.makeMap = function() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-  //  console.log(LatLng.toString());
-  //  console.log(data);
     $.each(clubs, function(i, club) {
       
 
@@ -66,23 +64,19 @@ CodeClubWorld.makeMap = function() {
 
       if (lat === null || lng === null) return;
 
-      // if(/^[eE]+/.test(club.name)) {
-      //   console.log(club.name);
-      //   console.log(lat + " " + lng);
-      // }
+      if(club.name === 'Hamilton Code Club' || club.name === 'IEC of Hamilton') {
+        console.log(club.name);
+        console.log(lat + " " + lng);
+      }
 
-      // if(/^[Qu]+/.test(club.name)) {
-      //   console.log(club.name);
-      //   console.log(lat + " " + lng);
-      // }
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
             position: latLng,
-            // map: map,
+            map: map,
             icon: 'img/marker.png'
           });
 
-      if(lat !== 43.2554951 && lng !== -79.8607806){
+      if(club.name !== 'Hamilton Code Club' && club.name !== 'IEC of Hamilton'){
         markers.push(marker);
       }
 
@@ -135,8 +129,3 @@ CodeClubWorld.makeMap = function() {
 
   });
 };
-
-
-
-// Math.acos( Math.sin( Math.RADIANS( `latitude` ) ) * Math.sin( Math.RADIANS( $fLat ) ) + Math.cos( RADIANS( `latitude` ) )
-// * COS( RADIANS( $fLat )) * COS( RADIANS( `longitude` ) - RADIANS( $fLon )) ) * 6380 < 10

@@ -1,10 +1,8 @@
 
 window.CodeClubWorld = {};
 $(function() {
-  // TODO: add your API key
   CodeClubWorld.api_token = 'ROe90450b2a7fd5fefdaa57c51aead395927510b4ea7b133fe0f298747cc50d8aa';
 
-  // TODO: add your Country Code here
   CodeClubWorld.country_code = 'CA';
 
   CodeClubWorld.api = 'https://api.codeclubworld.org';
@@ -56,8 +54,10 @@ CodeClubWorld.makeMap = function() {
     });
 
   //  console.log(LatLng.toString());
-//    console.log(data);
+  //  console.log(data);
     $.each(clubs, function(i, club) {
+      
+
       var address = club.venue.address;
       if (!address) return;
 
@@ -66,17 +66,32 @@ CodeClubWorld.makeMap = function() {
 
       if (lat === null || lng === null) return;
 
+      // if(/^[eE]+/.test(club.name)) {
+      //   console.log(club.name);
+      //   console.log(lat + " " + lng);
+      // }
+
+      // if(/^[Qu]+/.test(club.name)) {
+      //   console.log(club.name);
+      //   console.log(lat + " " + lng);
+      // }
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
             position: latLng,
+            // map: map,
             icon: 'img/marker.png'
           });
 
-      markers.push(marker);
+      if(lat !== 43.2554951 && lng !== -79.8607806){
+        markers.push(marker);
+      }
 
       google.maps.event.addListener(marker, 'click', function() {
         var infobox = CodeClubWorld.infobox;
         infobox.close();
+
+        console.log(club.name);
+        console.log(marker.position.lat() + " " + marker.position.lng());
 
         var content = [];
 
@@ -88,10 +103,6 @@ CodeClubWorld.makeMap = function() {
           content.push('<p>City: ' + club.venue.address.city + '</p>');
         }
 
-        if (club.venue.address.country) {
-          content.push('<p>' + club.venue.address.country.name + '</p>');
-        }
-
         if (club.looking_for_volunteer == true) {
           content.push('<p><span class="glyphicon glyphicon-ok"></span> Looking for volunteers</p>');
           if (club.venue.url) {
@@ -101,17 +112,13 @@ CodeClubWorld.makeMap = function() {
               '</a>'
             );
           }
-          content.push('<a class="btn btn-border-green" href="https://www.codeclub.org.uk/start-a-club/volunteers">Volunteer</a>');
-        } else {
-          content.push('<p><span class="glyphicon glyphicon-remove"></span> Looking for volunteers</p>');
-          if (club.venue.url) {
-            content.push(
-              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
-                club.venue.url +
-              '</a>'
-            );
-          }
+          content.push('<a class="btn btn-border-green" target="_blank" href="http://codeclub.ca/volunteer.html">Volunteer</a>');
+        } 
+
+        if (club.venue.url) {
+          content.push('<a target="_blank" href="' + club.venue.url + '">' + club.venue.url + '</a>');
         }
+
         content = content.join('');
         infobox.setContent(content);
         infobox.open(map, marker);
@@ -119,11 +126,8 @@ CodeClubWorld.makeMap = function() {
     });
 
     $('.counter').replaceWith(clubs.length);
-    // TODO: I've commented out the styles section to make
-    // this work in jsbin. Leave the styles section of the
-    // mcOptions "as is"
     var mcOptions = {
-      gridSize: 30,
+      gridSize: 35,
       imagePath: 'img/m'
     };
 
@@ -131,3 +135,8 @@ CodeClubWorld.makeMap = function() {
 
   });
 };
+
+
+
+// Math.acos( Math.sin( Math.RADIANS( `latitude` ) ) * Math.sin( Math.RADIANS( $fLat ) ) + Math.cos( RADIANS( `latitude` ) )
+// * COS( RADIANS( $fLat )) * COS( RADIANS( `longitude` ) - RADIANS( $fLon )) ) * 6380 < 10

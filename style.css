@@ -295,11 +295,15 @@ strong{
 .d-table-cell{
   display: table-cell;
 }
-.container-custom{
+.container-custom {
   max-width: 850px;
   /* min-width: 450px; */
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-nav {
+  width: 1300px;
 }
 .center-block{
   display: block;

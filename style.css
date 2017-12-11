@@ -302,9 +302,12 @@ strong{
   margin-right: auto;
 }
 
-.container-nav {
-  width: 1300px;
+@media (min-width: 1150px){
+  .container-nav {
+    width: 1275px;
+  }
 }
+
 .center-block{
   display: block;
   margin-left: auto;
@@ -461,6 +464,10 @@ strong{
 
 .navbar-custom .icon-bar {
   background-color: #479946;
+}
+
+#language .active {
+  text-decoration: underline;
 }
 .padding-xxs{
   padding: 5px;

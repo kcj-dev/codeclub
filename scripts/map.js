@@ -16,6 +16,12 @@ $(function() {
   }
   CodeClubWorld.infobox = new google.maps.InfoWindow();
 
+  if ($('#language .active a').html() !== 'EN')
+    CodeClubWorld.path = '../';
+  else
+    CodeClubWorld.path = './';
+
+  console.log(CodeClubWorld.path);
 });
 
 CodeClubWorld.makeMap = function() {
@@ -73,7 +79,7 @@ CodeClubWorld.makeMap = function() {
           marker = new google.maps.Marker({
             position: latLng,
             map: map,
-            icon: 'img/marker.png'
+            icon: CodeClubWorld.path + 'img/marker.png'
           });
 
       if(club.name !== 'Hamilton Code Club' && club.name !== 'IEC of Hamilton'){
@@ -122,7 +128,7 @@ CodeClubWorld.makeMap = function() {
     $('.counter').replaceWith(clubs.length);
     var mcOptions = {
       gridSize: 35,
-      imagePath: 'img/m'
+      imagePath: CodeClubWorld.path + 'img/m'
     };
 
    var markerCluster = new MarkerClusterer(map, markers, mcOptions);

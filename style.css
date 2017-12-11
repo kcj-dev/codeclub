@@ -514,6 +514,10 @@ strong{
   padding-left: 10px;
   padding-right: 10px;
 }
+.padding-x-m{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .padding-y-xxs{
   padding-top:2px;
   padding-bottom:2px;

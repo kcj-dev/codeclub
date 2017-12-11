@@ -558,6 +558,9 @@ strong{
 .text-xs{
   font-size: 14px;
 }
+.text-xxs{
+  font-size: 12px;
+}
 .text-blue {
   color: #3bb2f7;
 }

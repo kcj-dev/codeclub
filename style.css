@@ -334,11 +334,14 @@ strong{
   height: 450px;
 }
 .height-480{
-  height: 480px;
+  height: 495px;
 }
 
 .height-500{
   height: 500px;
+}
+.height-550 {
+  height: 550px;
 }
 .img-max{
   max-width: 250px;
@@ -904,11 +907,10 @@ footer input[type^="email"]{
 
 /* offset anchor for fixed header */
 
-.offset:before { 
+.offset:before {
   display: block;
    content: " ";
     height: 150px;      /* Give height of your fixed element */
-      margin-top: -150px; /* Give negative margin of your fixed element */      
-     visibility: hidden; 
+      margin-top: -150px; /* Give negative margin of your fixed element */
+     visibility: hidden;
 }
-

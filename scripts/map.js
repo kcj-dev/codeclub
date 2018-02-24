@@ -61,6 +61,7 @@ CodeClubWorld.makeMap = function() {
 
     $.each(clubs, function(i, club) {
       
+      console.log(club);
 
       var address = club.venue.address;
       if (!address) return;
@@ -70,10 +71,10 @@ CodeClubWorld.makeMap = function() {
 
       if (lat === null || lng === null) return;
 
-      if(club.name === 'Hamilton Code Club' || club.name === 'IEC of Hamilton') {
-        console.log(club.name);
-        console.log(lat + " " + lng);
-      }
+      // if(club.venue.address.city === 'Surrey') {
+      //   console.log(club);
+      //   // console.log(lat + " " + lng);
+      // }
 
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({

@@ -15,9 +15,9 @@
 
 body {
   font-family: 'Museo-300';
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
-  color: black;
+  color: #282828;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -124,14 +124,162 @@ strong{
   color: white;
 }
 
-.bg-blue {
+.bg-blue-mission {
   background-color: #5290d2;
   color: white;
+  padding: 20px;
 }
-.bg-darkwhite{
+
+.bg-blue-mission--h4 {
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0 60px;
+}
+
+/* .bg-darkwhite{
   background-color: #F5F6F9;
-  color: black;
+} */
+
+.involved {
+  padding: 75px 35px 35px;
 }
+
+h2.involved--title {
+  font-size: 3.5rem
+  padding: 0 30px;
+}
+
+.involved--sub {
+  color: #282828;
+}
+
+.startclub--div {
+  padding: 45px 5px 60px;
+}
+
+.startclub--active {
+  color: #ff8447;
+}
+
+.startclub--active .active-link {
+  color: #ff8447;
+}
+
+.startclub--active .active-link:hover {
+  color: #ea723a;
+}
+
+.startclub--img-2 {
+  /* width: 80%;
+  height: 100%; */
+  padding-top: 10px;
+  width: 170px;
+  height: 100px;
+  margin: auto;
+}
+
+.startclub--img-3 {
+  width: 170px;
+  height: 100px;
+  margin: auto;
+}
+
+.startclub--img-3 img {
+  width: 100px;
+  height: auto;
+  margin:auto;
+}
+
+.startclub--img-3 .diamond {
+  width: 80px;
+  height: auto;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.startclub--img-3 .computer {
+  width: 250px;
+  height: auto;
+  margin: auto;
+}
+
+
+.startclub--text {
+  /* margin-bottom: 20px; */
+}
+
+.startclub--body {
+  height: 200px;
+}
+/* 1199 205px */
+
+@media (min-width: 1200px) {
+  .startclub--body {
+    height: 180px  ;
+  }
+}
+@media (max-width: 993px) {
+  .startclub--body {
+    height: 200px  ;
+  }
+}
+@media (max-width: 991px) {
+  .startclub--body {
+    height: 155px;
+  }
+}
+
+@media (max-width: 761px) {
+  .startclub--body {
+    height: 115px;
+    height: 140px;
+  }
+}
+
+.startclub--btn {
+  /* padding: 0 35px; */
+  margin-bottom: 20px;
+  margin: 0 40px 20px;
+}
+
+@media (min-width: 992px) {
+  .startclub--btn {
+    margin: 0 20px 20px;
+  }
+
+}
+
+/******** ABOUT ********/
+
+.project {
+  padding: 80px 0 0;
+}
+
+.about {
+  padding-top: 40px;
+}
+
+.about--title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about--text {
+  margin-bottom: 80px;
+}
+
+.about--div {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .about--text {
+    padding-right: 30px;
+  }
+
+}
+
 .bg-empty {
   background-color: black;
   opacity: 0;
@@ -199,6 +347,16 @@ strong{
   border-radius: 30px;
 }
 .btn-border-green:hover{
+  background-color: #479946;
+  color: white;
+}
+.btn-border-green-lt {
+  background-color: white;
+  color: #479946;
+  border: 1px solid #479946;
+  border-radius: 30px;
+}
+.btn-border-green-lt:hover {
   background-color: #479946;
   color: white;
 }
@@ -665,12 +823,14 @@ strong{
   background-color: white;
 }
 .social-links-m i{
-  height: 45px;
-  width: 45px;
-  line-height: 1.8;
-  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  line-height: 1.7;
+  font-size: 20px;
   border: 1px solid white;
+  margin-left: 10px;
 }
+
 .social-links a:hover {
   text-decoration: none;
 }
@@ -806,9 +966,8 @@ footer a {
   margin-bottom: 0;
 }
 
-footer p {
-  font-size: 14px;
-  margin-top: 20px;
+footer .copy--link {
+  padding-bottom: 20px;
 }
 
 footer .btn{
@@ -818,6 +977,27 @@ footer .btn{
 footer input[type^="email"]{
   width: 265px;
   font-size: 17px;
+}
+
+footer > section > p {
+  letter-spacing: 0.9px;
+}
+footer .copy {
+  padding-top: 15px;
+}
+
+footer .copy--text {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 25px;
+}
+.copy .copy--kids {
+  color: #ff8900;
+  font-size: 1.5rem;
+}
+
+.copy .copy--kids:hover {
+  color: #ce6e00;
 }
 
 .form-inline{
@@ -879,6 +1059,27 @@ footer input[type^="email"]{
   color: #4994a5;
   text-decoration: none;
 }
+
+.contact--img img {
+  width: 30%;
+  height: auto;
+  margin: auto;
+}
+
+.contact-div {
+  margin-bottom: 50px;
+}
+
+hr {
+  width: 30%;
+  margin: 50px auto;
+}
+
+#mc_embed_signup .signup-title {
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
 
 #bg-howWeWork{
   position: absolute;

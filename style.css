@@ -127,7 +127,7 @@ strong{
 .bg-blue-mission {
   background-color: #5290d2;
   color: white;
-  padding: 20px;
+  padding: 60px 0;
 }
 
 .bg-blue-mission--h4 {
@@ -137,9 +137,19 @@ strong{
   padding: 0 60px;
 }
 
-/* .bg-darkwhite{
-  background-color: #F5F6F9;
-} */
+.bg-blue-mission img {
+  width: 10%;
+  height: auto;
+  margin: auto;
+}
+
+.bg-blue-mission--link {
+  color: #ff8447;
+}
+
+.bg-blue-mission--link:hover {
+  color: #ce6e00;
+}
 
 .involved {
   padding: 75px 35px 35px;
@@ -274,10 +284,15 @@ h2.involved--title {
 }
 
 @media (min-width: 992px) {
+  .about--div-inter {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 992px) {
   .about--text {
     padding-right: 30px;
   }
-
 }
 
 .bg-empty {
@@ -1061,13 +1076,14 @@ footer .copy--text {
 }
 
 .contact--img img {
-  width: 30%;
+  width: 20%;
   height: auto;
   margin: auto;
 }
 
-.contact-div {
+.contact-div:first-child {
   margin-bottom: 50px;
+  border-right: 1px solid #E0E0E0;
 }
 
 hr {

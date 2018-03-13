@@ -125,7 +125,7 @@ strong{
 }
 .custom-homepage-headomg {
   letter-spacing: 1px;
-  padding: 50px 0 80px;
+  padding: 50px 0 30px;
 }
 
 .bg-blue-mission {
@@ -168,6 +168,7 @@ strong{
 }
 
 .hero--graphics-2 {
+
   padding-top: 50px;
   padding-left: 20px;
   width: 16%;
@@ -175,26 +176,26 @@ strong{
 }
 
 .hero--title {
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 .involved-section .floating-logo img {
 
   /* width: 28%;
-  height: auto;
-  position: absolute;
+  height: auto; */
+  /* position: absolute;
   right: -27%;
   bottom: -26px; */
 
-  width: 100px;
-  height: auto;
-  position: absolute;
+  /* width: 100px;
+  height: auto; */
+  /* position: absolute; */
   /* right: 20%; */
-  bottom: -26px;
+  /* bottom: -26px; */
 
-  -webkit-transform: translateX(-50%);
+  /* -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 /* 2nd option */
@@ -502,7 +503,7 @@ h2.involved--title {
 .btn-green-2 {
   background-color: #479946;
   color: white;
-  border: 3px solid #479946;
+  border: 1px solid #479946;
   border-radius: 30px;
 }
 
@@ -761,6 +762,41 @@ h2.involved--title {
 .navbar-custom .navbar-toggle {
   background-color: #e2e2e2;
 }
+
+/* @media (min-width: 1150px) { */
+@media (max-width: 1150px) {
+  .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-right: 0;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	  }
+
+
+}
+
 
 .navbar-custom .icon-bar {
   background-color: #479946;

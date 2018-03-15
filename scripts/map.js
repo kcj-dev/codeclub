@@ -30,17 +30,22 @@ CodeClubWorld.makeMap = function() {
   //console.log(el);
   if (!el) return;
 
+  // $.ajax({
+  //   method      : 'GET',
+  //   url         : CodeClubWorld.api + '/clubs?in_country=' + CodeClubWorld.country_code,
+  //   contentType : 'application/json',
+  //   headers     : { 'Authorization': 'Bearer ' + CodeClubWorld.api_token, 'Accept': 'application/vnd.codeclubworld.v'+CodeClubWorld.api_version }
+  // })
   $.ajax({
-    method      : 'GET',
-    url         : CodeClubWorld.api + '/clubs?in_country=' + CodeClubWorld.country_code,
-    contentType : 'application/json',
-    headers     : { 'Authorization': 'Bearer ' + CodeClubWorld.api_token, 'Accept': 'application/vnd.codeclubworld.v'+CodeClubWorld.api_version }
+    method: 'GET',
+    url: 'clubJSON/clubs.json',
+    contentType : 'application/json'
   })
   .done( function(data) {
     var clubs = data, lat, lng, dataZ, LatLng
         markers = [];
 
-  //  console.log(clubs);
+   console.log(clubs);
     if(CodeClubWorld.region){
       lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
       lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
@@ -61,7 +66,7 @@ CodeClubWorld.makeMap = function() {
 
     $.each(clubs, function(i, club) {
       
-      console.log(club);
+      // console.log(club);
 
       var address = club.venue.address;
       if (!address) return;

@@ -1,3 +1,8 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
     font-family: Museo-300;
     src: url("fonts/exljbris - MuseoSansRounded-300.otf");
@@ -160,6 +165,28 @@ strong{
 
 .bg-blue-mission--link:hover {
   color: #ce6e00;
+}
+
+
+/*** Counter Section ***/
+.cc-counter {
+  padding: 70px 0 10px;
+}
+.cc-counter h3.counterup-text {
+    font-size: 5rem;
+    font-weight: 500;
+    color:  #479946;
+}
+small.symbol {
+  color:  #479946;
+  display: inline-block;
+    padding-left:  10px;
+    vertical-align: 25%;
+}
+
+/*** cc-map ***/
+.cc-map {
+  padding-bottom: 60px;
 }
 
 .hero--graphics {
@@ -512,6 +539,61 @@ h2.involved--title {
   color: #479946;
   border: 1px solid #479946;
 }
+
+/*** Newsletter ***/
+.news-sub-title {
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .news-sub-title {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-sub-title {
+    padding: 0 165px;
+  }
+}
+.newsletter .news--title {
+  font-size: 3.5rem;
+}
+
+.news-sub-title {
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  padding: 0 60px;
+}
+
+@media (min-width: 1024px) {
+  padding: 0 165px;
+}
+
+.newsletter .btn-hollow {
+  background-color: #5290d2;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 7px 12px;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.newsletter .btn-hollow:hover {
+  background-color: #fff;
+  color: #479946;
+}
+.sponsors {
+  padding: 60px 0;
+}
+.sponsors .sponsors--title {
+    font-size: 3.5rem
+
+}
+
 .btn-orange{
   background-color: #ff8900;
   color: white;

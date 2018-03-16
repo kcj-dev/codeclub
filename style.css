@@ -347,6 +347,21 @@ h2.involved--title {
   margin: auto; */
 }
 
+.startclub--img-3 .cc-how {
+  width: 300px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  bottom: 20px;
+}
+
+.startclub--img-3 .backpack {
+  width: 100px;
+  height: auto;
+  margin: auto;
+
+}
+
 
 .startclub--text {
   /* margin-bottom: 20px; */

@@ -41,7 +41,7 @@
         $body .= $name . "is looking for a volunteer opportunity. \r\n";
         $body .= "Message: \r\n $message";
 
-//        echo $venue->getEmail();
-        mail("pengkim.badboy@gmail.com", $subject, $body, $headers);
+//        var_dump($venue);
+        mail($venue->getEmail(), $subject, $body, $headers);
     }
 ?>

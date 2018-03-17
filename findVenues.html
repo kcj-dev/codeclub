@@ -8,18 +8,17 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="Pengkim Sy">
-  <title>About - Code Club Canada</title>
+  <title>Find venues - Code Club Canada</title>
   <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="style.css" rel="stylesheet">
-  <link href="style2.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
-  <script src="scripts/faq_custom.js" type="text/javascript"></script>
+  <script src="scripts/findVenues.js" type="text/javascript"></script>
 </head>
 
 <body class="bg-lightgray">
@@ -64,68 +63,31 @@
         </div>
       </nav>
   <div class="bg-green after-nav">
-    <h1 class="text-white padding-xxl text-center text-capitalize heading">about</h1>
+    <h1 class="text-white padding-xxl text-center text-capitalize heading">Find a Venue</h1>
   </div>
-  <section class="container custom-section-introtoscratch bg-white">
-    <h2 class="text-green text-uppercase">Code Club Canada</h2>
-    <p>At Code Club Canada, we think all children should have the opportunity to learn to code.</p>
-    <p>To do this, we support a nationwide network of volunteers and educators who run free coding clubs for children aged 8-12 to build and share their ideas and learning along the way. Code Club Canada is a project with the Montreal-based national non-profit organization, Kids Code Jeunesse.</p>
-    <h2 class="text-green text-uppercase">ABOUT CODE CLUB INTERNATIONAL</h2>
-    <p class="padding-top-m">
-        <a class="text-green" href="https://www.codeclubworld.org/" target="_blank">Code Club International</a> currently has over 10,000 clubs in over 100 countries, and our club projects have been translated into 28 languages.
-    </p>
-    <p class="padding-top-s">
-        Our <a class="text-green" href="projects.html" target="_blank">projects</a> are easy to follow step-by-step guides, which help children learn Scratch, HTML &amp; CSS and Python by making games, animations, and websites. There’s no need for the adult running the session to be a computing expert. The projects gradually introduce coding concepts to allow children to build their knowledge incrementally.
-    </p>
-    <p>
-        Code Club was founded in 2012, and in 2015 joined forces with the
-        <a class="text-green" href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi Foundation</a>, a registered UK charity. Code Club is a key educational programme for the Foundation, working to help many more young people learn how to build their ideas with code.
-      </p>
-    <!-- <p class="padding-top-s">
-      Our <a class="text-green" href="https://codeclubprojects.org/en-GB/" target="_blank">projects</a>
-      are easy to follow step-by-step guides which help children learn Scratch,
-      HTML &amp; CSS and Python by making games, animations, and websites. The projects gradually
-      introduce coding concepts to allow children to build their knowledge incrementally,
-      meaning there’s also no need for the adult running the session to be a computing expert.
-    </p>
-    <p class="padding-top-s">
-      Code Club was founded in 2012, and in 2015 joined forces with the
-      <a class="text-green" href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi Foundation,</a>
-      a registered UK charity. Code Club is a key educational
-      programme for the Foundation, working to help many more young people
-      learn how to build their ideas with code.
-    </p>
-    <p class="padding-top-s">
-      Code Club Canada is working in partnership with
-      <a class="text-green" href="https://www.codeclubworld.org/" target="_blank">Code Club International</a>,
-      a programme within
-      <a class="text-green" href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi Foundation,</a>
-      with a mission to put a
-      Code Club in every community around the world
-    </p> -->
+ 
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-6 col-xs-offset-3">
+                <form>
+                    <label for="address">City or Town</label>
+                    <input type="text" id="address" name="address" placeholder="Montreal, CA" />
+                    <select name="radian">
+                        <option value="5">5 km</option>
+                        <option value="10">10 km</option>
+                        <option value="25">25 km</option>
+                    </select>
+                    <input type="submit" value="Search" class="btn btn-green" />
+                </form>
+              </div>
+          </div>
+          <div id="clubsSec" class="row">
 
-    <!-- <h2 class="text-green text-uppercase">Our Mission</h2>
-    <p class="padding-top-m">
-      To create a Code Club in every community in Canada in partnership with <a class="text-green" href="http://kidscodejeunesse.org" target="_blank">Kids Code Jeunesse</a>.
-    </p> -->
-
-    <!-- <h2 class="text-green text-uppercase">Our Vision</h2>
-    <p class="padding-top-m">
-      To give all children the skills and confidence to shape their world.
-    </p>
-
-    <h2 class="text-green text-uppercase">Our Values</h2>
-    <p class="padding-top-m">
-      We believe in working and learning together.
-    </p>
-    <p class="padding-top-m">
-      We inspire discovery and invention through play.
-    </p>
-    <p class="padding-top-m">
-      We believe in the transformational power of programming.
-    </p> -->
-
+          </div>
+      </div>
   </section>
+
   <footer class="bg-black">
     <div class="container width-950 padding-m">
       <div class="row">

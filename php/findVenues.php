@@ -6,9 +6,12 @@
     // -73.5710357
 
 
+    require_once 'DAO.php';
     // Name of the csv file to read from
     $file = 'clubs-2018-03-16.csv';
     $delimiter = ',';
+
+    $dao = new DAO($file, $delimiter);
 
     // detault latitute & longitude to Montreal
     $lat = 45.501689;
@@ -32,52 +35,18 @@
     
     if (isset($_GET['radian']) && is_numeric($_GET['radian'])) {
         $radian = $_GET['radian'];
-        $json = getNearbyVenueWithRadian($lat, $lng, $radian);
+        $json = $dao->getNearbyVenueWithRadian($lat, $lng, $radian);
         header('Content-Type: application/json');
-        echo $json;
+        echo json_encode($json);
         exit;
     }
 
-    /**
-     * Find all the venues within the radian
-     */
-    function getNearbyVenueWithRadian($lat, $lng, $radian) { 
-        global $file;
-        global $delimiter;
-        if (($handle = fopen($file, 'r')) === false) {
-            die('Error opening file');
-        }
-    
-        $headers = fgetcsv($handle, 1000, $delimiter);
-        $csv2json = array();
-    
-        while ($row = fgetcsv($handle, 1000, $delimiter)) {
-            $arraycombine = array_combine($headers, $row);
-            $clubLat = floatval($arraycombine['Latitude']);
-            $clubLng = floatval($arraycombine['Longitude']);
-            $distance = getDistance($lat, $lng, $clubLat, $clubLng);
-            $arraycombine += [ 'Distance' => $distance];
-            if ($distance <= $radian)
-                $csv2json[] = $arraycombine;
-        }
-    
-        // var_dump($csv2json);
-        fclose($handle);
-        return json_encode($csv2json); 
-    }
-
-    /**
-     * Get the distance between 2 latitudes and longitutes
-     */
-    function getDistance($lat1, $lng1, $lat2, $lng2) {
-        $R = 6371; //6371 for km, 3959 for mile
-        $lat1 = deg2rad($lat1);
-        $lng1 = deg2rad($lng1);
-        $lat2 = deg2rad($lat2);
-        $lng2 = deg2rad($lng2);
-
-        $d = acos(sin($lat1) * sin($lat2) + cos($lat1) * cos($lat2) * cos($lng2 - $lng1)) * $R;
-        return $d;
+    if (isset($_GET['club_id'])) {
+        $id = $_GET['club_id'];
+        $venue = $dao->findVenueById($id);
+        header('Content-Type: application/json');
+        echo $venue;
+        exit;
     }
 
     /**

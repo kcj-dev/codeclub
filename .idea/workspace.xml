@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89392f79-7ec5-4be2-8c9f-4046393a8288" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/findVenues.js" afterPath="$PROJECT_DIR$/scripts/findVenues.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/findVenues.html" afterPath="$PROJECT_DIR$/findVenues.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="findVenues.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="findVenues.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/findVenues.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -93,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="findVenues.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="findVenues.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/findVenues.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="80" column="38" lean-forward="false" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
+            <state relative-caret-position="324">
+              <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -144,11 +144,11 @@
         <option value="$PROJECT_DIR$/contactVenueForm.html" />
         <option value="$PROJECT_DIR$/scripts/contactVenue.js" />
         <option value="$PROJECT_DIR$/volunteer.html" />
-        <option value="$PROJECT_DIR$/findVenues.html" />
         <option value="$PROJECT_DIR$/php/emailVenue.php" />
         <option value="$PROJECT_DIR$/php/DAO.php" />
         <option value="$PROJECT_DIR$/php/findVenues.php" />
         <option value="$PROJECT_DIR$/scripts/findVenues.js" />
+        <option value="$PROJECT_DIR$/findVenues.html" />
       </list>
     </option>
   </component>
@@ -235,12 +235,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521308099173</updated>
-      <workItem from="1521308100780" duration="13979000" />
+      <workItem from="1521308100780" duration="14311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13979000" />
+    <option name="totallyTimeSpent" value="14311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -316,14 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/findVenues.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="80" column="38" lean-forward="false" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/emailVenue.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -360,6 +352,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="60" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findVenues.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
           <folding />
         </state>
       </provider>

@@ -40,6 +40,18 @@ function showPosition(position) {
     var lat = position.coords.latitude;
     var lng = position.coords.longitude;
 
+    var key = 'AIzaSyAhbioDAOoKEsK3wpuBAgRCp5ja9uvY0aM';
+
+    $.ajax({
+        dataType : 'Json',
+        url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + encodeURIComponent(lat)
+                + ',' + encodeURIComponent(lng) + '&key=' + key,
+        method: 'GET'
+    }).done(function (data, textStatus, jqXHR) {
+        var currentAddr = data.results;
+        codeclub.address.val(currentAddr[0].formatted_address);
+    });
+
     $.ajax({
         contentType : 'application/json',
         url: codeclub.url + "?lat=" + encodeURIComponent(lat) + "&lng=" + encodeURIComponent(lng)
@@ -51,29 +63,30 @@ function showPosition(position) {
 
 function success(data, textStatus, jqXHR) {
     var clubs = data, name, address, id;
-    console.log(clubs);
     codeclub.clubsSec.empty();
 
-    codeclub.clubsSec.append($('<h2 class="text-center">Search result: ' + clubs.length + '</h2>'));
-    clubs.forEach(function(club) {
-        console.log(club);
-        if (club['Name'])
-            name = club.Name;
+    if (clubs.length > 0) {
+        codeclub.clubsSec.append($('<h2 class="text-center">Search result: ' + clubs.length + '</h2>'));
+        clubs.forEach(function(club) {
+            console.log(club);
+            if (club['Name'])
+                name = club.Name;
 
-        if (club['Address'])
-            address = club['Address'];
+            if (club['Address'])
+                address = club['Address'];
 
-        if (club['City'])
-            address += ', ' + club['City'];
+            if (club['City'])
+                address += ', ' + club['City'];
 
-        if (club['PostalCode'])
-            address += '&nbsp;&nbsp;' + club['PostalCode'];
+            if (club['PostalCode'])
+                address += '&nbsp;&nbsp;' + club['PostalCode'];
 
-        if (club['Id'])
-            id = club['Id'];
+            if (club['Id'])
+                id = club['Id'];
 
-        showClubs(name, address, id);
-    });
+            showClubs(name, address, id);
+        });
+    }
 }
 
 function showClubs(name, address, id) {

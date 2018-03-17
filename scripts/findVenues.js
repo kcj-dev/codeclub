@@ -5,25 +5,36 @@ $(function(){
     codeclub.url = 'php/findVenues.php';
 
     codeclub.clubsSec = $('#clubsSec');
+    codeclub.address = $('form input[name="address"]');
+    codeclub.radian = $('form select');
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
 
     var searchBtn = $('form input[type="submit"]');
-    searchBtn.on('click', function(e){
-        e.preventDefault();
-        var address = $('form input[name="address"]').val();
-        var radian = $('form select').val();
+    searchBtn.on('click', search);
 
-        $.ajax({
-            contentType : 'application/json',
-            url: codeclub.url + "?address=" + encodeURIComponent(address) 
-                    + "&radian=" + encodeURIComponent(radian),
-            method: "GET",
-            success: success
-        });
-    });
+    codeclub.address.on('keypress', function(e) {
+        if(e.which === 13) {
+            search(e);
+            // e.los();
+            codeclub.address.blur();
+        }
+    })
 });
+
+function search(e) {
+    e.preventDefault();
+
+    $.ajax({
+        contentType : 'application/json',
+        url: codeclub.url + "?address=" + encodeURIComponent(codeclub.address.val())
+        + "&radian=" + encodeURIComponent(codeclub.radian.val()),
+        method: "GET",
+        success: success
+    });
+}
 
 function showPosition(position) {
     var lat = position.coords.latitude;
@@ -43,6 +54,7 @@ function success(data, textStatus, jqXHR) {
     console.log(clubs);
     codeclub.clubsSec.empty();
 
+    codeclub.clubsSec.append($('<h2 class="text-center">Search result: ' + clubs.length + '</h2>'));
     clubs.forEach(function(club) {
         console.log(club);
         if (club['Name'])
@@ -55,7 +67,7 @@ function success(data, textStatus, jqXHR) {
             address += ', ' + club['City'];
 
         if (club['PostalCode'])
-            address += '  ' + club['PostalCode'];
+            address += '&nbsp;&nbsp;' + club['PostalCode'];
 
         if (club['Id'])
             id = club['Id'];
@@ -65,12 +77,15 @@ function success(data, textStatus, jqXHR) {
 }
 
 function showClubs(name, address, id) {
-    var div = $('<div class="col-xs-4 border"></div>');
-    var header = $('<h4 class="text-center">' + name + '</h4>');
-    var location = $('<p class="text-center">' + address + '</p>');
-    var contactBtn = $('<a href="contactVenueForm.html?club_id=' + encodeURIComponent(id)
-             + '" class="btn btn-green">Contact</a>');
+    var outterDiv = $('<div class="col-xs-4 padding-xs col-centered"></div>');
+    var innerDiv = $('<div class="border-xs center-vertical col-xs-12 border-radius"></div>')
+    var header = $('<h4 class="text-center text-capitalize">' + name + '</h4>');
+    var location = $('<p class="text-center text-capitalize">' + address + '</p>');
+    var contactBtn = $('<p class="text-center"><a href="contactVenueForm.html?club_id=' + encodeURIComponent(id)
+             + '" class="btn btn-green">Contact</a></p>');
 
-    div.append(header).append(location).append(contactBtn);
-    codeclub.clubsSec.append(div);
+    innerDiv.append(header).append(location).append(contactBtn);
+    outterDiv.append(innerDiv);
+
+    codeclub.clubsSec.append(outterDiv);
 }

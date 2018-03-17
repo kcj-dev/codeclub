@@ -60,25 +60,24 @@
         </div>
     </div>
 </nav>
-<div class="bg-green after-nav">
-    <h1 class="text-white padding-xxl text-center text-capitalize heading">Find a Venue</h1>
-</div>
 
-<section>
-    <div class="container">
+<section class="after-nav">
+    <div class="container padding-y-xl ">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
-                <h1 class="text-center" id="clubName">test</h1>
-                <h4 class="text-center" id="clubAddress">test</h4>
-                <form action="php/emailVenue.php" method="GET">
-                    <input type="hidden" name="id" />
-                    <label for="name">Your name (required)</label>
-                    <input type="text" id="name" name="name" required/>
-                    <label for="email">Your email (required)</label>
-                    <input type="email" id="email" name="email" required/>
-                    <label for="message">Your message (required)</label>
-                    <textarea name="message" id="message" required></textarea>
-                    <input type="submit" value="Submit" class="btn btn-green" />
+                <h1 class="text-center text-capitalize" id="clubName">test</h1>
+                <h4 class="text-center text-capitalize" id="clubAddress">test</h4>
+                <form action="php/emailVenue.php" method="GET" class="padding-y-l img-responsive">
+                    <input type="hidden" name="id"/>
+                    <label for="name" class="img-responsive">Your name (required)</label>
+                    <input type="text" class="img-responsive border-radius padding-xxs padding-x-m" id="name" name="name" required/>
+                    <label for="email" class="img-responsive margin-top-m">Your email (required)</label>
+                    <input type="email" class="img-responsive border-radius padding-xxs padding-x-m"  id="email" name="email" required/>
+                    <label for="message" class="img-responsive margin-top-m">Your message (required)</label>
+                    <textarea name="message" id="message" class="img-responsive padding-s height-220 border-radius" required></textarea>
+                    <p class="text-right">
+                        <input type="submit" value="Submit" class="btn btn-green padding-x-m margin-top-m text-s" />
+                    </p>
                 </form>
             </div>
         </div>

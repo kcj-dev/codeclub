@@ -267,6 +267,9 @@ strong{
 .border-radius{
   border-radius: 20px;
 }
+.border-radius-s{
+  border-radius: 8px;
+}
 .border-top-radius{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -425,6 +428,12 @@ strong{
   border: 3px solid green;
   border-radius: 15px;
 }
+.center-vertical {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .navbar-custom {
   background-color: white;
   color: #ffffff;
@@ -543,6 +552,14 @@ strong{
 .padding-y-m{
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.padding-y-l {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.padding-y-xl {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .pos-fixed {
   position: fixed;

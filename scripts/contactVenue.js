@@ -20,7 +20,7 @@ function success(data, textStatus, jqXHR) {
     var club = data;
 
     $('#clubName').html(club.Name);
-    $('#clubAddress').html(club.Address);
+    $('#clubAddress').html(club.Address + ', ' + club.City + '&nbsp;&nbsp;&nbsp;' + club.PostalCode);
 }
 
 function error(jqXHR, textStatus, errorThrown) {

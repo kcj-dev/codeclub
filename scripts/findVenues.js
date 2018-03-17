@@ -41,6 +41,7 @@ function showPosition(position) {
 function success(data, textStatus, jqXHR) {
     var clubs = data, name, address, id;
     console.log(clubs);
+    codeclub.clubsSec.empty();
 
     clubs.forEach(function(club) {
         console.log(club);

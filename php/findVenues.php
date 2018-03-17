@@ -44,8 +44,9 @@
     if (isset($_GET['club_id'])) {
         $id = $_GET['club_id'];
         $venue = $dao->findVenueById($id);
+
         header('Content-Type: application/json');
-        echo $venue;
+        echo json_encode($venue);
         exit;
     }
 

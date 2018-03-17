@@ -51,14 +51,14 @@ function showPosition(position) {
         var currentAddr = data.results;
         codeclub.address.val(currentAddr[0].formatted_address);
     });
-
-    $.ajax({
-        contentType : 'application/json',
-        url: codeclub.url + "?lat=" + encodeURIComponent(lat) + "&lng=" + encodeURIComponent(lng)
-                 + "&radian=" + encodeURIComponent(codeclub.radian),
-        method: "GET",
-        success: success
-    });
+    //
+    // $.ajax({
+    //     contentType : 'application/json',
+    //     url: codeclub.url + "?lat=" + encodeURIComponent(lat) + "&lng=" + encodeURIComponent(lng)
+    //              + "&radian=" + encodeURIComponent(codeclub.radian),
+    //     method: "GET",
+    //     success: success
+    // });
 }
 
 function success(data, textStatus, jqXHR) {

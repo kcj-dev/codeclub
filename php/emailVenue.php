@@ -38,10 +38,10 @@
 
         $venue = $dao->findVenueById($id);
 
-        $body .= $name . "is looking for an volunteer opportunity. \r\n";
+        $body .= $name . "is looking for a volunteer opportunity. \r\n";
         $body .= "Message: \r\n $message";
 
-        echo $venue->getEmail();
+//        echo $venue->getEmail();
         mail("pengkim.badboy@gmail.com", $subject, $body, $headers);
     }
 ?>

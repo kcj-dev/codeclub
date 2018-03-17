@@ -1,11 +1,4 @@
-<?php 
-
-
-    // toronto
-    // 45.4973703
-    // -73.5710357
-
-
+<?php
     require_once 'DAO.php';
     // Name of the csv file to read from
     $file = 'clubs-2018-03-16.csv';

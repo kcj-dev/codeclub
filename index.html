@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
+  <meta name="description" content="Coding Clubs for kids. Fun activities for kids and volunteer, parents training courses for schools and communities across Canada. Volunteers welcome, no previous knowledge required.">
   <meta name="author" content="Pengkim Sy">
   <title>Code Club Canada</title>
 
@@ -14,8 +14,12 @@
   <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link href="style.css" rel="stylesheet">
   <link href="style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="animate.min.css">
+
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107936177-1"></script>
   <script>
@@ -36,6 +40,10 @@
   <script src="scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
   <script src="scripts/form.js" type="text/javascript"></script>
   <script src="scripts/remove_images.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="scripts/waypoints.min.js"></script>
+  <script src="scripts/jquery.counterup.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
 <body class="text-s">
@@ -62,7 +70,7 @@
           <img src="img/icon/code-club-logo.svg" width="65" height="60"/>Canada
         </a>
         <a href="http://kidscodejeunesse.org/" target="_blank" class="text-green text-xxs padding-x-s">
-            a project with &nbsp;&nbsp;<img src="img/Logo_KCJ_White_2 Lines.svg"  width="80" height="42" alt="KCJ logo" />
+            <img src="img/Logo_KCJ_White_2 Lines.svg"  width="80" height="42" alt="KCJ logo" />
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse navbar-right">
@@ -79,89 +87,151 @@
       </div>
     </div>
   </nav>
-  <section class="after-nav bg-green">
+
+
+  <!-- Hero -->
+  <section class="after-nav bg-green hero">
     <div class="container padding-xxs">
       <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="img/resources-robot1.png" class="custom-resources-img1">
+        <!-- <div class="col-md-3 col-sm-3"> -->
+        <div class="col-md-2 col-md-offset-1 col-sm-3 hero--graphics">
+
+          <div class="logo-placeholder ">
+            <img src="img/robot-1.png" alt="robot-1" class="floating-logo">
+            <!-- <img src="img/kids.png" alt="kids"> -->
+          </div>
+        </div><!-- /col -->
+        <div class="col-md-6">
+          <h1 class="text-white text-center hero--title text-capitalize custom-homepage-headomg">A nationwide network
+            <br>
+            of volunteer-led coding clubs
+            <br>
+            for children aged 8-12
+          </h1>
+
         </div>
-        <div class="col-md-6 col-sm-6">
-          <h1 class="text-white text-center padding-top text-capitalize custom-homepage-headomg">A nationwide network of volunteer-led coding clubs for children aged 8-12</h1>
-        </div>
-        <div class="col-md-3 col-sm-3">
-          <img src="img/resources-robot2.png" class="custom-resources-img2">
+        <div class="col-md-3 col-sm-3 hero--graphics-2">
+          <!-- <img src="img/resources-robot2.png" class="custom-resources-img2"> -->
+          <img src="img/Sunshine.png" alt="sunshine image" class="img-responsive">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-darkwhite">
-    <div class="container text-s padding-m width-700 text-center">
-      <h2 class="text-green">How to create a Code club?</h2>
-      <h3>4 ingredients: volunteers, projects, a venue, and kids!</h3>
-      <!-- <p>Help us inspire the next generation by running a Code Club. Get in touch with your local school, library or community centre to volunteer for an hour each week. Check out our tips for running a club, and register yours to receive access to our projects and club resources.
-      </p> -->
+
+  <!-- Get Involved Section -->
+  <section class="bg-darkwhite involved-section" id="getInvolved">
+    <!-- <div class="container padding-l width-700 text-center"> -->
+    <div class="container text-center involved">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <!-- <img src="img/kids.png" alt="kids"> -->
+          <!-- <div class="logo-placeholder floating-logo">
+            <img src="img/robot-1.png" alt="robot-1">
+          </div> -->
+          <h2 class="text-green involved--title uppercase fadeInDown">How Can I Get Involved?</h2>
+          <h3 class="involved--sub">Follow the links below to find out how to start a Code Club and how venues, volunteers and parents can get involved!</h3>
+        </div>
+      </div>
+
     </div>
   </section>
-  <section class="bg-darkwhite">
-    <div class="container padding-m">
+
+
+  <!-- Start a Code Club Section -->
+  <section class="startclub">
+    <div class="container startclub--div">
       <div class="row">
+
+        <div class="col-md-3 col-sm-6 col-xs-12 padding-xs startclub--section">
+          <div class="text-center">
+            <div class="startclub--img-3 man">
+              <!-- <img class="img-responsive  computer thumbnaily" src="img/computer.png" alt="computer graphic"> -->
+              <!-- <img class="img-responsive  cc-how thumbnaily" src="img/cc-how.png" alt="man with questionmark"> -->
+              <img class="img-responsive  robot-how thumbnaily" src="img/robot-how.svg" alt="man with questionmark">
+              <!-- <img class="img-responsive  computer thumbnaily" src="img/kids-cc.png" alt="computer graphic"> -->
+            </div>
+            <div class="padding-s text-center">
+              <div class="startclub--body">
+                <h4 class="startclub--active"><a href="volunteer.html" class="active-link">What Is A Code Club?</a></h4>
+                <p class="startclub--text">Setting up a code club is easier than you think! Click here to see the first steps you can take towards getting a code club in your community.</p>
+              </div>
+
+              <div class="startclub--btn startclub--active">
+                <a class="btn btn-border-green-lt btn-block btn-green-2" href="/projects.html">Start A Club</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-3 col-sm-6 col-xs-12 padding-xs">
-          <div class="border-xs border-radius height-450">
-            <img class="img img-responsive border-top-radius" src="img/CodeClub_Graphic_Volunteers.png" alt="Volunteers graphic" />
-            <div class="padding-s text-center margin-y-auto">
+          <div class="text-center startclub--section">
+            <div class="startclub--img-3">
+              <img class="img-responsive diamond thumbnaily" src="img/diamond.png" alt="Our Volunteers">
+            </div>
+            <div class="padding-s text-center">
+            <div class="startclub--body">
               <h4>Volunteers</h4>
-              <p>Would you like to volunteer at a local community venue and use our Code Club projects to teach 8 to 12 year olds to code?</p>
-              <a class="btn btn-border-green" href="volunteer.html">Be a Volunteer</a>
+              <p class="startclub--text">Would you like to volunteer at a local community venue and use our Code Club projects to teach 8 to 12 year olds to code?</p>
+            </div>
+              <div class="startclub--btn">
+              <a class="btn btn-border-green-lt btn-block" href="http://codeclub.ca/volunteer.html">Be A Volunteer</a>
+            </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 padding-xs">
-          <div class="border-xs border-radius height-450">
-            <img class="img img-responsive border-top-radius" src="img/CodeClub_Graphic_Projects.png" alt="Project graphic" />
-            <div class="padding-s text-center">
-              <h4>Projects</h4>
-              <p>The Code Club projects are step-by-step guides for children to follow and create animations, games, websites and much more.</p>
-              <a class="btn btn-border-green" href="projects.html">See the Projects</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 padding-xs">
-          <div class="border-xs border-radius height-450">
-            <img class="img img-responsive border-top-radius" src="img/CodeClub_Graphic_Hosts.png" alt="Hosts graphic" />
-            <div class="padding-s text-center">
-              <h4>Venues</h4>
-                  Are you a librarian or community leader who would like to run a Code Club in your area, either by yourself or with the help of a volunteer?
-                  </p>
-              <a class="btn btn-border-green" href="venues.html">Be a Club Host</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12  padding-xs">
-          <div class="border-xs border-radius height-450">
-            <img class="img img-responsive border-top-radius" src="img/CodeClub_Graphic_Kids.png" alt="Kids graphic" />
-            <div class="padding-s text-center">
-              <h4>Kids</h4>
-              <p>How do I bring a Code Club to the kids in my community?<br>
 
-              Click here to find out more about having your child join a Code Club.</p>
-              <a class="btn btn-border-green" href="teacher.html">For your child</a>
+        <div class="col-md-3 col-sm-6 col-xs-12 padding-xs">
+          <div class="text-center startclub--section">
+            <div class="startclub--img-2">
+              <img class="img-responsive thumbnaily" src="img/building-2.png" alt="Code club venues">
+            </div>
+            <div class="padding-s text-center">
+            <div class="startclub--body">
+              <h4>Venues</h4>
+              <p class="startclub--text">Are you a librarian or community leader who would like to run a Code Club in your area, either by yourself or with the help of a volunteer?</p>
+            </div>
+            <div class="startclub--btn">
+              <a class="btn btn-border-green-lt btn-block" href="venues.html">Be a Club Host</a>
+            </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 padding-xs">
+          <div class="text-center startclub--section">
+            <div class="startclub--img-3">
+              <img class="img-responsive thumbnaily backpack" src="img/backpack.png" alt="Volunteers graphic">
+            </div>
+            <div class="padding-s text-center">
+              <div class="startclub--body">
+                <h4>Parents</h4>
+                <p class="startclub--text">How do I bring a Code Club to the kids in my community?<br>
+                Click here to find out more about having your child join a Code Club.</p>
+              </div>
+              <div class="startclub--btn">
+                <a class="btn btn-border-green-lt btn-block" href="http://codeclub.ca/teacher.html">For your child</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
     </div>
   </section>
 
-  <section class="bg-blue">
-    <div class="container padding-xxs">
+
+<!-- Mission Section -->
+  <section class="bg-blue-mission">
+    <div class="container">
       <div class="row">
-        <!-- <div class="col-md-3 col-sm-12">
-          <img src="img/CCL-logo.svg" style="width:150px;padding-top:25px;">
-        </div> -->
-        <div class="col-md-12 col-sm-12">
-          <h2 class="text-white text-center padding-bottom text-capitalize custom-homepage-headomg">MISSION</h2>
-          <h4 style="text-align:center">create a Code Club in every community in Canada as a project with <a class="text-white" href="http://kidscodejeunesse.org/home/">Kids Code Jeunesse</a>.<br><br> </h4>
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="text-white text-center padding-bottom text-capitalize mission--title">MISSION</h2>
+          <h4 class="bg-blue-mission--h4">To create a Code Club in every community in Canada as a project with
+            <a class="bg-blue-mission--link" href="http://kidscodejeunesse.org">Kids Code Jeunesse.</a>
+          </h4>
+          <a href="http://kidscodejeunesse.org"><img src="img/KCJ-logo.svg" alt="kidscodejeunesse" class="img-responsive thumbnaily"></a>
+
         </div>
         <!-- <div class="col-md-3 col-sm-12 pull-right">
           <img src="img/KCJ-logo.svg" style="width:150px;padding-top:25px;">
@@ -170,7 +240,49 @@
     </div>
   </section>
 
-  <section>
+
+<!-- Counter Section -->
+  <section class="cc-counter">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="counter-up text-center">
+            <h3 class="counterup-text">
+              <span>20,000</span><small class="symbol"> +</small>
+            </h3>
+            <h3 class="cc-counter--title">Canadian Children</h3>
+            <p>We're building a strong Canadian community of young people who are learning to code.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="counter-up text-center">
+            <h3 class="counterup-text">
+              <span>1000</span><small class="symbol"> +</small>
+            </h3>
+            <h3 class="cc-counter--title">Teachers Trained</h3>
+            <p>Canadian teacher training is taking place everywhere, from the east to the west coast of Canada.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="counter-up text-center">
+            <h3 class="counterup-text">
+              <span>1200</span><small class="symbol"> +</small>
+            </h3>
+            <h3 class="cc-counter--title">Canadian Clubs</h3>
+            <p>In Canada there are thousands of kids learning to code and we are dedicated in making Code Club a fun way of learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+<!-- Code Club Map -->
+  <section class="cc-map">
     <div class="container padding-m">
       <div class="row">
         <div class="col-md-5">
@@ -209,23 +321,39 @@
       </div>
     </div>
   </section>
-  <section class="bg-green">
-    <div class="container padding-m">
+
+
+  <!-- Newsletter Section -->
+  <section class="bg-blue-mission newsletter">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12 col-xs-12 text-center">
-          <h2 class="padding-xxs">Newsletter</h2>
-          <p>Want all of the latest news and updates about Code Club Canada?</p>
-          <p>Sign up for our newsletter!</p>
+          <h2 class="padding-xxs news--title uppercase">Newsletter</h2>
+          <h3 class="news-sub-title">Want all of the latest news and updates about Code Club Canada?
+            <br>
+          Sign up for our newsletter!
+          </h3>
+          <!-- <h3 class="news-sub-title">Sign up for our newsletter!</h3> -->
+
           <form id="form" class="padding-xs" role="form">
             <input class="input" type="text" placeholder="E-mail" />
-            <input class="btn btn-green border-s border-white" type="button" value="Sign-up" />
+            <!-- <input class="btn btn-green border-s border-white" type="button" value="Sign-up" /> -->
+            <input class="btn btn-hollow " type="button" value="Sign-up" />
             <div class="error"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
-  <section class="container">
+
+
+  <!-- Sponsors -->
+  <section class="container sponsors">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 text-center">
+        <h2 class="text-green sponsors--title uppercase">Our Valued Sponsors</h2>
+      </div>
+    </div>
     <div class="row padding-small margin-auto flexcontainer padding-top-xl padding-bottom-xl">
         <div class="col-sm-3 col-xs-6">
           <a href="https://www.microsoft.com/en-ca/" target="_blank">
@@ -250,8 +378,10 @@
       </div>
   </section>
 
+
+<!-- Footer -->
   <footer class="bg-black padding-m">
-    <div class="container width-950 padding-m">
+    <div class="container width-950 padding-s">
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-6">
           <h5 class="text-uppercase">About</h5>
@@ -260,7 +390,7 @@
             <!-- <li><a href="#">Support Us</a></li> -->
           </ul>
         </div>
-        <div class="col-md-3 col-sm-3 col-xs-6 padding-bot-xxl">
+        <div class="col-md-3 col-sm-3 col-xs-6 ">
           <h5 class="text-uppercase">Start a Club</h5>
           <ul class="list-unstyled">
             <li><a href="volunteer.html">Volunteer</a></li>
@@ -286,18 +416,18 @@
         </div>
       </div>
     </div>
-    <section class="bg-black padding-xs width-1100 margin-auto">
+    <section class="bg-black width-1100 margin-auto copy">
       <div class="social-links social-links-m pull-right">
-        <a href="https://www.facebook.com/codeclubcanada" target="_blank">
+        <a href="https://www.facebook.com/codeclubcanada" target="_blank" class="copy--link">
           <i class="d-block fa fa-facebook bg-white social-black-hover"></i>
         </a>
-        <a href="https://twitter.com/codeclubcanada" target="_blank">
+        <a href="https://twitter.com/codeclubcanada" target="_blank" class="copy--link">
           <i class="d-block fa fa-twitter bg-white social-black-hover"></i>
         </a>
       </div>
-      <p class="text-white">&copy; Code Club Canada 2017</p>
+      <p class="text-white copy--text">&copy; Code Club Canada 2018 a project with <a href="http://kidscodejeunesse.org/index.html" class="copy--kids">Kids code jeunesse</a></p>
     </section>
   </footer>
-</body>
 
+</body>
 </html>

@@ -90,6 +90,9 @@ p{
 strong{
   font-weight: 900;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 /* centered columns styles */
 .row-centered {
     text-align:center;
@@ -324,6 +327,12 @@ h2.involved--title {
   margin: auto;
 }
 
+.man {
+  width: 190px;
+  height: 100px;
+  margin: auto;
+}
+
 .startclub--img-3 img {
   width: 100px;
   height: auto;
@@ -331,10 +340,10 @@ h2.involved--title {
 }
 
 .startclub--img-3 .diamond {
-  width: 80px;
+  width: 65px;
   height: auto;
   margin: auto;
-  padding-top: 5px;
+  padding-top: 22px;
 }
 
 .startclub--img-3 .computer {
@@ -353,6 +362,14 @@ h2.involved--title {
   margin: auto;
   position: relative;
   bottom: 20px;
+}
+
+.startclub--img-3 .robot-how {
+  width: 115px;
+  height: auto;
+  margin:auto;
+  position: relative;
+  bottom: 12px;
 }
 
 .startclub--img-3 .backpack {
@@ -495,6 +512,9 @@ h2.involved--title {
 /*  line-height: 2.3;*/
   border-radius: 10px;
   margin: 0;
+}
+.input {
+  border-color: transparent;
 }
 .btn-blue {
   background-color: #3bb2f7;
@@ -1404,6 +1424,13 @@ hr {
   margin-bottom: 60px;
   letter-spacing: 1px;
 }
+#mc_embed_signup .mc-field-group select {
+  height: 37px;
+  background-color: white;
+  width: 100%;
+  border-radius: 3px;
+}
+
 
 
 #bg-howWeWork{

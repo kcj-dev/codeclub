@@ -25,9 +25,7 @@ $(function() {
 });
 
 CodeClubWorld.makeMap = function() {
-//  console.log("makeMap called");
   var el = document.getElementById('map');
-  //console.log(el);
   if (!el) return;
 
   $.ajax({
@@ -51,7 +49,6 @@ CodeClubWorld.makeMap = function() {
       LatLng = new google.maps.LatLng(52.0, -95.5);
     }
 
-//    console.log(LatLng.toString());
     var map = new google.maps.Map(el, {
       zoom: dataZ,
       center: LatLng,
@@ -60,9 +57,7 @@ CodeClubWorld.makeMap = function() {
     });
 
     $.each(clubs, function(i, club) {
-      
-      console.log(club);
-
+      // console.log(club);
       var address = club.venue.address;
       if (!address) return;
 

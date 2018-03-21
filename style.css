@@ -152,6 +152,7 @@ strong{
 
 .mission--title {
   letter-spacing: 1px;
+  font-size: 4rem;
 }
 
 .bg-blue-mission--h4 {
@@ -286,13 +287,15 @@ small.symbol {
   padding: 75px 35px 35px;
 }
 
-h2.involved--title {
-  font-size: 3.5rem
+.involved-section .involved--title {
+  font-size: 4rem !important;
   padding: 0 30px;
+  color: #479946;
 }
 
 .involved--sub {
   color: #282828;
+  line-height: 1.4;
 }
 
 .startclub--div {
@@ -605,7 +608,7 @@ h2.involved--title {
   }
 }
 .newsletter .news--title {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .news-sub-title {

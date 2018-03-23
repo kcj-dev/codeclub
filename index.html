@@ -14,11 +14,10 @@
   <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link href="style.css" rel="stylesheet">
   <link href="style2.css" rel="stylesheet">
-  <link rel="stylesheet" href="animate.min.css">
 
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107936177-1"></script>
@@ -32,7 +31,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
-
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCVhpvCqV_l4eqclW8wgert8OxAlcskA4"></script>
   <script src="scripts/markerclusterer/markerclusterer.js" type="text/javascript"></script>
   <script src="scripts/map.js" type="text/javascript"></script>
@@ -40,7 +38,6 @@
   <script src="scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
   <script src="scripts/form.js" type="text/javascript"></script>
   <script src="scripts/remove_images.js" type="text/javascript"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <script src="scripts/waypoints.min.js"></script>
   <script src="scripts/jquery.counterup.min.js"></script>
   <script src="scripts/main.js"></script>
@@ -129,7 +126,7 @@
           <!-- <div class="logo-placeholder floating-logo">
             <img src="img/robot-1.png" alt="robot-1">
           </div> -->
-          <h2 class="text-green involved--title uppercase fadeInDown">How Can I Get Involved?</h2>
+          <h2 class="text-green involved--title uppercase">How Can I Get Involved?</h2>
           <h3 class="involved--sub">Follow the links below to find out how to start a Code Club and how venues, volunteers and parents can get involved!</h3>
         </div>
       </div>
@@ -333,12 +330,12 @@
             <br>
           Sign up for our newsletter!
           </h3>
-          <!-- <h3 class="news-sub-title">Sign up for our newsletter!</h3> -->
 
           <form id="form" class="padding-xs" role="form">
             <input class="input" type="text" placeholder="E-mail" />
+            <br>
             <!-- <input class="btn btn-green border-s border-white" type="button" value="Sign-up" /> -->
-            <input class="btn btn-hollow " type="button" value="Sign-up" />
+            <input class="btn btn-hollow text-uppercase" type="button" value="Sign-up" />
             <div class="error"></div>
           </form>
         </div>
@@ -348,7 +345,7 @@
 
 
   <!-- Sponsors -->
-  <section class="container sponsors">
+  <!-- <section class="container sponsors">
     <div class="row">
       <div class="col-sm-12 col-xs-12 text-center">
         <h2 class="text-green sponsors--title uppercase">Our Valued Sponsors</h2>
@@ -376,8 +373,47 @@
           </a>
         </div>
       </div>
-  </section>
+  </section> -->
 
+
+<section class="container sponsors">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12 text-center">
+      <h2 class="text-green sponsors--title uppercase">Our Valued Sponsors</h2>
+    </div>
+  </div>
+
+  <div class="owl-carousel owl-theme">
+      <div class="item">
+        <a href="https://www.microsoft.com/en-ca/" target="_blank">
+        <img src="img/sponsors/Microsoft-Grey.png" alt="" class="img-responsive">
+      </a>
+      </div>
+
+      <div class="item">
+        <a href="https://www.sap.com/index.html" target="_blank">
+          <img src="img/sponsors/NSERC-Grey.png" alt="" class="img-responsive">
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="https://www.sap.com/index.html" target="_blank">
+          <img src="img/sponsors/SAP-Grey.png" alt="" class="img-responsive">
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="https://about.rogers.com/community/tedrogersfund/" target="_blank">
+          <img src="img/sponsors/tedrogersscolarshipfund_fr_grey.png" alt="" class="img-responsive bourse">
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://www.sap.com/index.html" target="_blank">
+          <img src="img/sponsors/NSERC-Grey.png" alt="" class="img-responsive">
+        </a>
+      </div>
+    </div><!-- /row -->
+</section>
 
 <!-- Footer -->
   <footer class="bg-black padding-m">
@@ -428,6 +464,9 @@
       <p class="text-white copy--text">&copy; Code Club Canada 2018 a project with <a href="http://kidscodejeunesse.org/index.html" class="copy--kids">Kids code jeunesse</a></p>
     </section>
   </footer>
+
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="scripts/app.js"></script>
 
 </body>
 </html>

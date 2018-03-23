@@ -6,3 +6,13 @@ jQuery(document).ready(function ($) {
         time: 100
     });
 });
+
+// $(document).ready(function(){
+//   // Back to top
+//   $('#back-to-top').on('click', function (e) {
+//       e.preventDefault();
+//       $('html,body').animate({
+//           scrollTop: 0
+//       }, 700);
+//   });
+// });

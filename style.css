@@ -83,6 +83,7 @@ a[class^="text-green"]:hover{
 input[type^="email"]:hover, input[type^="text"]:hover{
   color: black;
 }
+
 p{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -153,6 +154,7 @@ strong{
 .mission--title {
   letter-spacing: 1px;
   font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 .bg-blue-mission--h4 {
@@ -291,6 +293,7 @@ small.symbol {
   font-size: 4rem !important;
   padding: 0 30px;
   color: #479946;
+  margin-bottom: 20px;
 }
 
 .involved--sub {
@@ -496,7 +499,7 @@ small.symbol {
 .bg-orange{
   background-color: #ff8900;
   color: white;
-  border-color: 1px solid white;
+  border: 1px solid white;
 }
 
 .bg-transparent {
@@ -609,27 +612,35 @@ small.symbol {
 }
 .newsletter .news--title {
   font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 .news-sub-title {
   padding: 0 10px;
 }
 
-@media (min-width: 768px) {
-  padding: 0 60px;
-}
-
-@media (min-width: 1024px) {
-  padding: 0 165px;
+.newsletter #form > input.input {
+  border-radius: 5px;
 }
 
 .newsletter .btn-hollow {
   background-color: #5290d2;
   color: #fff;
   border: 2px solid #fff;
-  padding: 7px 12px;
+  padding: 7px 20px;
   border-radius: 8px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  font-weight: 500;
+}
+
+.newsletter .btn-hollow {
+  background-color: #ff8900;
+  color: #fff;
+  border: 2px solid #ff8900;
+  padding: 4px 28px;
+  border-radius: 30px;
+  /* margin-left: 10px; */
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -637,12 +648,21 @@ small.symbol {
   background-color: #fff;
   color: #479946;
 }
+
+.newsletter #form > input.btn.btn-hollow {
+  margin-top: 20px;
+}
+
+/* SPONSORS */
 .sponsors {
   padding: 60px 0;
 }
 .sponsors .sponsors--title {
-    font-size: 3.5rem
-
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.sponsors .bourse {
+  padding-top: 14%;
 }
 
 .btn-orange{

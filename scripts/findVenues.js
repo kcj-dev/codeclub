@@ -89,13 +89,11 @@ function showPosition(position) {
 function success(data, textStatus, jqXHR) {
     var clubs = data, name, address, id;
 
-    console.log(clubs);
     codeclub.clubsSec.empty();
 
     if (clubs.length > 0) {
         codeclub.clubsSec.append($('<h2 class="text-center">Search result: ' + clubs.length + '</h2>'));
         clubs.forEach(function(club) {
-            console.log(club);
             if (club['Name'])
                 name = club.Name;
 
@@ -124,7 +122,7 @@ function success(data, textStatus, jqXHR) {
  * @param id
  */
 function showClubs(name, address, id) {
-    var outterDiv = $('<div class="col-xs-4 padding-xs col-centered"></div>');
+    var outterDiv = $('<div class="col-sm-4 col-xs-6 padding-xs col-centered"></div>');
     var innerDiv = $('<div class="border-xs center-vertical col-xs-12 border-radius"></div>')
     var header = $('<h4 class="text-center text-capitalize">' + name + '</h4>');
     var location = $('<p class="text-center text-capitalize">' + address + '</p>');

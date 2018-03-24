@@ -1,4 +1,6 @@
-var codeclub = {};
+var codeclub = {
+    errorMsg : "Please fill this"
+};
 
 $(function(){
     codeclub.radian = 5;
@@ -30,6 +32,18 @@ $(function(){
  */
 function search(e) {
     e.preventDefault();
+
+    var $error = $('.error');
+
+    var $address = $('form input[name="address"]');
+    if (!$address.val()) {
+        // $address.attr('placeholder', codeclub.errorMsg);
+        $error.html(codeclub.errorMsg);
+        $error.removeClass('hidden');
+        return;
+    }
+
+    $error.addClass('hidden');
 
     $.ajax({
         contentType : 'application/json',

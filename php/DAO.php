@@ -1,5 +1,7 @@
 <?php
     require_once 'Venue.php';
+    require_once 'VenueNotFoundException.php';
+
 
     class DAO {
 
@@ -17,6 +19,13 @@
             $this->delimiter = $delimiter;
         }
 
+        /**
+         * Find a venue by id
+         *
+         * @param $id
+         * @return Venue
+         * @throws VenueNotFoundException
+         */
         function findVenueById($id) {
             if (($handle = fopen($this->file, 'r')) === false) {
                 die('Error opening file');
@@ -31,11 +40,14 @@
                     $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
                         , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Postcode']
                         , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                        , $arraycombine['Contact email']);;
+                        , $arraycombine['Contact email'], $arraycombine['Url']);
                     break;
                 }
             }
 
+            if (!isset($venue)) {
+                throw new VenueNotFoundException("no venue found!");
+            }
             // var_dump($venue);
             fclose($handle);
             return $venue;
@@ -58,7 +70,7 @@
                 $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
                     , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Postcode']
                     , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                    , $arraycombine['Contact email']);
+                    , $arraycombine['Contact email'], $arraycombine['Url']);
 
                 $venues[] = $venue;
             }
@@ -88,9 +100,9 @@
                 $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
                         , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Postcode']
                         , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                        , $arraycombine['Contact email']);
+                        , $arraycombine['Contact email'], $arraycombine['Url']);
 
-                $distance = $this->getDistance($lat, $lng, $venue->getLat(), $venue->getLng());
+                $distance = $this->calculateDistanceBetween2LatAndLng($lat, $lng, $venue->getLat(), $venue->getLng());
                 if ($distance <= $radian)
                     $venues[] = $venue;
             }
@@ -103,7 +115,7 @@
         /**
          * Get the distance between 2 latitudes and longitutes
          */
-        private function getDistance($lat1, $lng1, $lat2, $lng2) {
+        private function calculateDistanceBetween2LatAndLng($lat1, $lng1, $lat2, $lng2) {
             $R = 6371; //6371 for km, 3959 for mile
             $lat1 = deg2rad($lat1);
             $lng1 = deg2rad($lng1);

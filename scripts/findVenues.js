@@ -24,6 +24,10 @@ $(function(){
     })
 });
 
+/**
+ * Search all the clubs nearby
+ * @param e
+ */
 function search(e) {
     e.preventDefault();
 
@@ -36,6 +40,13 @@ function search(e) {
     });
 }
 
+/**
+ * Get user current latitude and longitude, and then request to Google Geocode to
+ * get the actual address from latitude & longitude. Then display them in the "City or Town"
+ * field.
+ *
+ * @param position
+ */
 function showPosition(position) {
     var lat = position.coords.latitude;
     var lng = position.coords.longitude;
@@ -57,12 +68,14 @@ function showPosition(position) {
     //     url: codeclub.url + "?lat=" + encodeURIComponent(lat) + "&lng=" + encodeURIComponent(lng)
     //              + "&radian=" + encodeURIComponent(codeclub.radian),
     //     method: "GET",
-    //     success: success
+    //     updateFom: updateFom
     // });
 }
 
 function success(data, textStatus, jqXHR) {
     var clubs = data, name, address, id;
+
+    console.log(clubs);
     codeclub.clubsSec.empty();
 
     if (clubs.length > 0) {
@@ -89,6 +102,13 @@ function success(data, textStatus, jqXHR) {
     }
 }
 
+/**
+ * Display a block of club info (Name, Address, and Contact button)
+ *
+ * @param name
+ * @param address
+ * @param id
+ */
 function showClubs(name, address, id) {
     var outterDiv = $('<div class="col-xs-4 padding-xs col-centered"></div>');
     var innerDiv = $('<div class="border-xs center-vertical col-xs-12 border-radius"></div>')

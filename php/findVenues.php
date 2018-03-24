@@ -1,7 +1,7 @@
 <?php
     require_once 'DAO.php';
     // Name of the csv file to read from
-    $file = 'clubs-2018-03-16.csv';
+    $file = 'clubs.csv';
     $delimiter = ',';
 
     $dao = new DAO($file, $delimiter);
@@ -28,15 +28,24 @@
     
     if (isset($_GET['radian']) && is_numeric($_GET['radian'])) {
         $radian = $_GET['radian'];
-        $json = $dao->getNearbyVenueWithRadian($lat, $lng, $radian);
+        $venues = $dao->getNearbyVenueWithRadian($lat, $lng, $radian);
         header('Content-Type: application/json');
-        echo json_encode($json);
+        echo json_encode($venues);
         exit;
     }
 
     if (isset($_GET['club_id'])) {
         $id = $_GET['club_id'];
-        $venue = $dao->findVenueById($id);
+        try {
+            $venue = $dao->findVenueById($id);
+        } catch (VenueNotFoundException $e) {
+            $response = [
+                "error" => "Venue not found!"
+            ];
+            header('Content-Type: application/json');
+            echo json_encode($response);
+            exit;
+        }
 
         header('Content-Type: application/json');
         echo json_encode($venue);

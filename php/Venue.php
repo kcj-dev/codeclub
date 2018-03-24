@@ -10,6 +10,7 @@
         private $lat;
         private $lng;
         private $email;
+        private $url;
 
         /**
          * Venue constructor.
@@ -22,8 +23,10 @@
          * @param $lat
          * @param $lng
          * @param $email
+         * @param $url
          */
-        public function __construct($id, $name, $address, $city, $province, $postalCode, $lat, $lng, $email)
+        public function __construct($id, $name, $address, $city, $province, $postalCode, $lat, $lng
+            , $email, $url)
         {
             $this->id = $id;
             $this->name = $name;
@@ -34,6 +37,7 @@
             $this->lat = $lat;
             $this->lng = $lng;
             $this->email = $email;
+            $this->url = $url;
         }
 
 
@@ -47,7 +51,8 @@
                 'Address' => $this->address,
                 'City' => $this->city,
                 'Province' => $this->province,
-                'PostalCode' => $this->postalCode
+                'PostalCode' => $this->postalCode,
+                'Url' => $this->url
             ];
         }
 
@@ -193,6 +198,22 @@
         public function setEmail($email)
         {
             $this->email = $email;
+        }
+
+        /**
+         * @return mixed
+         */
+        public function getUrl()
+        {
+            return $this->url;
+        }
+
+        /**
+         * @param mixed $url
+         */
+        public function setUrl($url)
+        {
+            $this->url = $url;
         }
 
 

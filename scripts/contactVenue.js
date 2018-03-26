@@ -81,7 +81,8 @@ function sendEmail(e) {
  */
 function displayEmailResponse(data, textStatus, jqXHR) {
     if (data['email sent'] && data['email sent'] == true) {
-        $('#emailSent').removeClass('hidden');
+        // $('#emailSent').removeClass('hidden');
+        window.location.replace("http://codeclub.ca/findVenues.html");
     }
 }
 

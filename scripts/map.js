@@ -98,6 +98,9 @@ function makeMap() {
         if (club.Url) {
           content.push('<a target="_blank" href="' + club.Url + '">' + club.Url + '</a>');
         }
+          if (club.Id) {
+              content.push('<p><a class="btn btn-green" href="contactVenueForm.html?club_id=' + club.Id + '">Contact</a></p>');
+          }
 
         content = content.join('');
         infobox.setContent(content);

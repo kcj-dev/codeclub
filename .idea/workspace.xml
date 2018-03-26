@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89392f79-7ec5-4be2-8c9f-4046393a8288" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contactVenueForm.html" afterPath="$PROJECT_DIR$/contactVenueForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/findVenues.html" afterPath="$PROJECT_DIR$/findVenues.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/map.js" afterPath="$PROJECT_DIR$/scripts/map.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,19 +17,11 @@
       <file leaf-file-name="DAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="374">
               <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clubs.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/clubs.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="17" />
-              <folding />
+              <folding>
+                <marker date="1522075536757" expanded="true" signature="100:4391" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,28 +29,48 @@
       <file leaf-file-name="findVenues.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/findVenues.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="1615">
               <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="37" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+            <state relative-caret-position="177">
+              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactVenueForm.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contactVenueForm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contactVenueForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="476">
               <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11798">
+              <caret line="694" column="14" lean-forward="false" selection-start-line="694" selection-start-column="14" selection-end-line="694" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -67,7 +79,7 @@
       <file leaf-file-name="findVenues.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/findVenues.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="510">
               <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding />
             </state>
@@ -77,8 +89,8 @@
       <file leaf-file-name="emailVenue.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/emailVenue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="14" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+            <state relative-caret-position="187">
+              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -87,9 +99,23 @@
       <file leaf-file-name="contactVenue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/contactVenue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="263">
+              <caret line="76" column="2" lean-forward="true" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
+              <folding>
+                <marker date="1522075536761" expanded="true" signature="2126:2242" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="2186:2240" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="2244:2461" ph="/** Validate the input of the form. All fields can't be empty, and the email ...*/" />
+                <marker date="1522075536761" expanded="true" signature="2487:3180" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="2636:2728" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="2758:2851" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="2883:2978" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="3083:3160" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="3182:3316" ph="/** If there is any error from the request, print to the console. ...*/" />
+                <marker date="1522075536761" expanded="true" signature="3364:3396" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="3398:3440" ph="/** Get the query string in the url ...*/" />
+                <marker date="1522075536761" expanded="true" signature="3463:3752" ph="{...}" />
+                <marker date="1522075536761" expanded="true" signature="3628:3733" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,16 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3689">
               <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="findVenues.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/findVenues.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -149,10 +165,10 @@
         <option value="$PROJECT_DIR$/php/DAO.php" />
         <option value="$PROJECT_DIR$/php/emailVenue.php" />
         <option value="$PROJECT_DIR$/scripts/contactVenue.js" />
-        <option value="$PROJECT_DIR$/scripts/map.js" />
         <option value="$PROJECT_DIR$/scripts/findVenues.js" />
         <option value="$PROJECT_DIR$/findVenues.html" />
         <option value="$PROJECT_DIR$/contactVenueForm.html" />
+        <option value="$PROJECT_DIR$/scripts/map.js" />
       </list>
     </option>
   </component>
@@ -187,12 +203,18 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="codeclub.ca" type="b2602c69:ProjectViewProjectNode" />
               <item name="codeclub.ca" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="codeclub.ca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codeclub.ca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fr" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="codeclub.ca" type="b2602c69:ProjectViewProjectNode" />
@@ -208,7 +230,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,13 +270,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30745000" />
+    <option name="totallyTimeSpent" value="30878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -266,12 +287,22 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +360,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="33" />
-          <folding />
+          <folding>
+            <marker date="1522075536761" expanded="true" signature="2126:2242" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2186:2240" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2244:2461" ph="/** Validate the input of the form. All fields can't be empty, and the email ...*/" />
+            <marker date="1522075536761" expanded="true" signature="2487:3180" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2636:2728" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2758:2851" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2883:2978" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3083:3160" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3182:3316" ph="/** If there is any error from the request, print to the console. ...*/" />
+            <marker date="1522075536761" expanded="true" signature="3364:3396" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3398:3440" ph="/** Get the query string in the url ...*/" />
+            <marker date="1522075536761" expanded="true" signature="3463:3752" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3628:3733" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -345,7 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -353,7 +397,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1522075536757" expanded="true" signature="100:4391" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -361,7 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -393,7 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -467,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="95" column="20" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        <state relative-caret-position="11798">
+          <caret line="694" column="14" lean-forward="false" selection-start-line="694" selection-start-column="14" selection-end-line="694" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -477,7 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -485,14 +528,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="37" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+        <state relative-caret-position="177">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -501,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,31 +556,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/contactVenue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="263">
+          <caret line="76" column="2" lean-forward="true" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
+          <folding>
+            <marker date="1522075536761" expanded="true" signature="2126:2242" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2186:2240" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2244:2461" ph="/** Validate the input of the form. All fields can't be empty, and the email ...*/" />
+            <marker date="1522075536761" expanded="true" signature="2487:3180" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2636:2728" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2758:2851" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="2883:2978" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3083:3160" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3182:3316" ph="/** If there is any error from the request, print to the console. ...*/" />
+            <marker date="1522075536761" expanded="true" signature="3364:3396" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3398:3440" ph="/** Get the query string in the url ...*/" />
+            <marker date="1522075536761" expanded="true" signature="3463:3752" ph="{...}" />
+            <marker date="1522075536761" expanded="true" signature="3628:3733" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/emailVenue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="14" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="374">
           <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
+          <folding>
+            <marker date="1522075536757" expanded="true" signature="100:4391" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/findVenues.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="1615">
           <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
           <folding />
         </state>
@@ -547,7 +604,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/findVenues.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="510">
           <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding />
         </state>
@@ -555,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contactVenueForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="476">
           <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
         </state>

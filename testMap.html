@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="Pengkim Sy">
+  <title>Code Club Canada</title>
+
+  <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="style2.css" rel="stylesheet">
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107936177-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107936177-1');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCVhpvCqV_l4eqclW8wgert8OxAlcskA4"></script>
+  <script src="scripts/markerclusterer/markerclusterer.js" type="text/javascript"></script>
+  <script src="scripts/map.js" type="text/javascript"></script>
+
+
+</head>
+
+<body class="text-s">
+
+
+
+  <section>
+    <div class="container padding-m">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="">
+            <h2 class="padding-y-m"><span class="counter"></span> Code Clubs in Canada!</h2>
+            <h4 class="padding-y-xs">There is one near you!</h4>
+            <p>Use this interactive map to find a coding club near you.
+            </p>
+            <select name="region" id="region-search" class="select">
+              <option value="0" data-z="3" data-lat="52.0" data-lng="-95.5">All</option>
+              <option value="1" data-z="6" data-lat="53.9996" data-lng="-116.5765">Alberta</option>
+              <option value="2" data-z="7" data-lat="49.95" data-lng="-122.5">British Columbia</option>
+              <option value="3" data-z="7" data-lat="50.7609" data-lng="-98.8139">Manitoba</option>
+              <option value="4" data-z="9" data-lat="46.5653" data-lng="-65">New Brunswick</option>
+              <option value="5" data-z="5" data-lat="52" data-lng="-57.6604">Newfoundland and Labrador</option>
+              <option value="6" data-z="8" data-lat="45.0" data-lng="-63">Nova Scotia</option>
+              <option value="8" data-z="8" data-lat="66.0" data-lng="-66.0">Nunavut</option>
+              <option value="9" data-z="5" data-lat="46.0" data-lng="-84.0">Ontario</option>
+              <option value="10" data-z="8" data-lat="46.0" data-lng="-63.4168">Prince Edward Island</option>
+              <option value="11" data-z="8" data-lat="46" data-lng="-74">Quebec</option>
+              <option value="12" data-z="6" data-lat="52.9399" data-lng="-106.4509">Saskatchewan</option>
+              <option value="13" data-z="5" data-lat="64.2823" data-lng="-135.0000">Yukon</option>
+            </select>
+            <br/>
+            <h4 class="padding-y-xs">Can't find a club nearby?</h4>
+            <!-- <p>Get in touch with us directly and we'll be happy to help.</p> -->
+            <!-- <a class="btn btn-green border-s border-green" href="contact.html">Contact us</a> -->
+            <a class="btn btn-green border-s border-green" href="startaclub.html">Start Your Own Club</a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div id="map" class="map map-s">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -36,9 +36,9 @@
             while ($row = fgetcsv($handle, 1000, $this->delimiter)) {
                 $arraycombine = array_combine($headers, $row);
                 $clubId = $arraycombine['Id'];
-                if ($id === $clubId) {
+                if (strtolower($arraycombine['Verified']) == 'true' && $id === $clubId) {
                     $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
-                        , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Postcode']
+                        , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
                         , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
                         , $arraycombine['Contact email'], $arraycombine['Url']);
                     break;
@@ -56,7 +56,7 @@
         /**
          * Find all the venues
          */
-        function getAllVenues() {
+        function getVenuesByCountryCode($countryCode) {
             if (($handle = fopen($this->file, 'r')) === false) {
                 die('Error opening file');
             }
@@ -68,11 +68,12 @@
                 $arraycombine = array_combine($headers, $row);
 
                 $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
-                    , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Postcode']
+                    , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
                     , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
                     , $arraycombine['Contact email'], $arraycombine['Url']);
 
-                $venues[] = $venue;
+                if (strtolower($arraycombine['Verified']) == 'true')
+                    $venues[] = $venue;
             }
 
             fclose($handle);
@@ -98,12 +99,12 @@
                 $arraycombine = array_combine($headers, $row);
 
                 $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
-                        , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Postcode']
-                        , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                        , $arraycombine['Contact email'], $arraycombine['Url']);
+                    , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
+                    , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
+                    , $arraycombine['Contact email'], $arraycombine['Url']);
 
                 $distance = $this->calculateDistanceBetween2LatAndLng($lat, $lng, $venue->getLat(), $venue->getLng());
-                if ($distance <= $radian)
+                if (strtolower($arraycombine['Verified']) == 'true' && $distance <= $radian)
                     $venues[] = $venue;
             }
 

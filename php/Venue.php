@@ -6,6 +6,7 @@
         private $address;
         private $city;
         private $province;
+        private $countryCode;
         private $postalCode;
         private $lat;
         private $lng;
@@ -25,7 +26,7 @@
          * @param $email
          * @param $url
          */
-        public function __construct($id, $name, $address, $city, $province, $postalCode, $lat, $lng
+        public function __construct($id, $name, $address, $city, $province, $countryCode, $postalCode, $lat, $lng
             , $email, $url)
         {
             $this->id = $id;
@@ -33,6 +34,7 @@
             $this->address = $address;
             $this->city = $city;
             $this->province = $province;
+            $this->countryCode = $countryCode;
             $this->postalCode = $postalCode;
             $this->lat = $lat;
             $this->lng = $lng;
@@ -51,6 +53,7 @@
                 'Address' => $this->address,
                 'City' => $this->city,
                 'Province' => $this->province,
+                'CountryCode' => $this->countryCode,
                 'PostalCode' => $this->postalCode,
                 'Url' => $this->url
             ];
@@ -135,6 +138,23 @@
         {
             $this->province = $province;
         }
+
+        /**
+         * @return mixed
+         */
+        public function getCountryCode()
+        {
+            return $this->countryCode;
+        }
+
+        /**
+         * @param mixed $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+            $this->countryCode = $countryCode;
+        }
+
 
         /**
          * @return mixed

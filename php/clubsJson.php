@@ -3,6 +3,7 @@
   $file = 'clubs.csv';
   $delimiter = ',';
   $dao = new DAO($file, $delimiter);
-  $clubs = $dao->getAllVenues();
+  $clubs = $dao->getVenuesByCountryCode('CA');
+  header('Content-Type: application/json');
   echo json_encode($clubs);
  ?>

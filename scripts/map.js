@@ -21,7 +21,7 @@ $(function() {
 
     }
   };
-  g.file.open("GET", g.path + "php/clubsJson.php", true);
+  g.file.open("GET", "php/clubsJson.php", true);
   g.file.send();
 });
 
@@ -34,6 +34,8 @@ $(function() {
 function makeMap() {
   var clubs = g.res, lat, lng, dataZ, LatLng
       markers = [];
+  console.log(clubs.length);
+  // console.log(clubs);
   //checks if there is a province selected in the select tag.
    if(g.region){
      lat = parseInt(g.region.options[g.region.selectedIndex].getAttribute("data-lat"));
@@ -65,7 +67,9 @@ function makeMap() {
             map: map,
             icon: g.path + 'img/marker.png'
       });//end of setting the marker
-      if(club.Name !== 'Hamilton Code Club' && club.Name !== 'IEC of Hamilton'){
+      if(club.Name !== 'Hamilton Code Club' && club.Name !== 'IEC of Hamilton'
+                    && club.CountryCode === 'CA'){
+          // console.log(club);
         markers.push(marker);
       }
       google.maps.event.addListener(marker, 'click', function() {
@@ -93,9 +97,6 @@ function makeMap() {
         }
         if (club.Url) {
           content.push('<a target="_blank" href="' + club.Url + '">' + club.Url + '</a>');
-        }
-        if(club.Id) {
-          content.push('<p><a class="btn btn-green" href="contactVenueForm.html?club_id=' + encodeURIComponent(club.Id) + '">Contact</a></p>');
         }
 
         content = content.join('');

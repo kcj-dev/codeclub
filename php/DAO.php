@@ -35,13 +35,15 @@
 
             while ($row = fgetcsv($handle, 1000, $this->delimiter)) {
                 $arraycombine = array_combine($headers, $row);
-                $clubId = $arraycombine['Id'];
-                if (strtolower($arraycombine['Verified']) == 'true' && $id === $clubId) {
-                    $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
-                        , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
-                        , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                        , $arraycombine['Contact email'], $arraycombine['Url']);
-                    break;
+                if (!empty($arraycombine['Latitude']) && !empty($arraycombine['Longitude'])) {
+                    $clubId = $arraycombine['Id'];
+                    if (strtolower($arraycombine['Verified']) == 'true' && $id === $clubId) {
+                        $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
+                            , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
+                            , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
+                            , $arraycombine['Contact email'], $arraycombine['Url']);
+                        break;
+                    }
                 }
             }
 
@@ -67,13 +69,15 @@
             while ($row = fgetcsv($handle, 1000, $this->delimiter)) {
                 $arraycombine = array_combine($headers, $row);
 
-                $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
-                    , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
-                    , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                    , $arraycombine['Contact email'], $arraycombine['Url']);
+                if (!empty($arraycombine['Latitude']) && !empty($arraycombine['Longitude'])) {
+                    $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
+                        , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
+                        , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
+                        , $arraycombine['Contact email'], $arraycombine['Url']);
 
-                if (strtolower($arraycombine['Verified']) == 'true')
-                    $venues[] = $venue;
+                    if (strtolower($arraycombine['Verified']) == 'true')
+                        $venues[] = $venue;
+                }
             }
 
             fclose($handle);
@@ -98,14 +102,16 @@
             while ($row = fgetcsv($handle, 1000, $this->delimiter)) {
                 $arraycombine = array_combine($headers, $row);
 
-                $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
-                    , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
-                    , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
-                    , $arraycombine['Contact email'], $arraycombine['Url']);
+                if (!empty($arraycombine['Latitude']) && !empty($arraycombine['Longitude'])) {
+                    $venue = new Venue($arraycombine['Id'], $arraycombine['Name'], $arraycombine['Address 1']
+                        , $arraycombine['City'], $arraycombine['Region'], $arraycombine['Country code'], $arraycombine['Postcode']
+                        , floatval($arraycombine['Latitude']), floatval($arraycombine['Longitude'])
+                        , $arraycombine['Contact email'], $arraycombine['Url']);
 
-                $distance = $this->calculateDistanceBetween2LatAndLng($lat, $lng, $venue->getLat(), $venue->getLng());
-                if (strtolower($arraycombine['Verified']) == 'true' && $distance <= $radian)
-                    $venues[] = $venue;
+                    $distance = $this->calculateDistanceBetween2LatAndLng($lat, $lng, $venue->getLat(), $venue->getLng());
+                    if (strtolower($arraycombine['Verified']) == 'true' && $distance <= $radian)
+                        $venues[] = $venue;
+                }
             }
 
             fclose($handle);

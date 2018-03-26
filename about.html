@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="animate/animate.css">
+  <!-- Stylesheets -->
   <link href="style.css" rel="stylesheet">
   <link href="style2.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -68,7 +71,7 @@
 
   <!-- Hero -->
   <div class="bg-green after-nav">
-    <h1 class="text-white padding-xxl text-center text-capitalize heading">About</h1>
+    <h1 class="text-white padding-xxl text-center text-capitalize heading animated fadeInDown">About</h1>
   </div>
 
   <!-- About Code Club Canada -->
@@ -77,10 +80,9 @@
       <div class="row project--row">
         <div class="col-md-6 col-md-offset-3">
           <a href="http://kidscodejeunesse.org/index.html">
-            <!-- <img src="img/plane-sign.png" alt="a project with kidscodejeunesse" class="img-responsive"> -->
-            <!-- <img src="img/card_star.png" alt="flowers" class="img-responsive project--img"> -->
-            <img class="img-responsive  project--img" src="img/computer.png" alt="computer graphic">
-            <!-- <img src="img/pencil.png" alt="flowers" class="img-responsive project--img"> -->
+
+            <img class="img-responsive  project--img animated fadeInLeft" src="img/kids.svg" alt="kids graphic">
+
           </a>
         </div>
       </div>
@@ -93,22 +95,22 @@
     <div class="container padding-top">
       <div class="row">
         <div class="col-md-6 about--div">
-          <div class="about--text">
+          <div class="about--text animated fadeInLeft">
             <h2 class="text-green text-uppercase about--title">Code Club Canada</h2>
             <p class="lead">At Code Club Canada, we think all children should have the opportunity to learn to code.</p>
             <p>To do this, we support a nationwide network of volunteers and educators who run free coding clubs for children aged 8-12 to build and share their ideas and learning along the way. Code Club Canada is a project with the Montreal-based national non-profit organization, Kids Code Jeunesse.</p>
           </div>
         </div>
 
-        <div class="col-md-6 about--div">
-          <img src="img/card_startingclub.jpg" alt="Teacher teaching code" class="img-responsive">
+        <div class="col-md-6 about--div animated fadeInRight">
+          <img src="img/card_startingclub.jpg" alt="Teacher teaching code" class="img-responsive about-img-1">
         </div>
       </div><!-- /row -->
 
       <div class="row">
-        <div class="col-md-6  col-md-push-6 about--div about--div-inter">
+        <div class="col-md-6 col-md-push-6 about--div about--div-inter">
           <!-- col-md-4 col-md-push-4 -->
-          <div class="about--text">
+          <div class="about--text animated fadeInRight about__info">
             <h2 class="text-green text-uppercase about--title">ABOUT CODE CLUB INTERNATIONAL</h2>
             <p class="padding-top-m">Founded in 2012,
                 <a class="text-green" href="https://www.codeclubworld.org/" target="_blank"> Code Club International</a> currently has over 100 countries, and our club projects have been translated into 28 languages.
@@ -122,8 +124,8 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-md-pull-6 about--div">
-          <img src="img/card_usingscratch.jpg" alt="student learning to code" class="img-responsive">
+        <div class="col-md-6 col-md-pull-6 about--div about__img-2 animated fadeInLeft">
+          <img src="img/card_usingscratch.jpg" alt="student learning to code" class="img-responsive about-img-2">
         </div>
       </div><!-- /row -->
 
@@ -244,6 +246,8 @@
       <p class="text-white copy--text">&copy; Code Club Canada 2018 a project with <a href="http://kidscodejeunesse.org/index.html" class="copy--kids">Kids code jeunesse</a></p>
     </section>
   </footer>
+
+  <script src="js/wow.min.js"></script>
 
 </body>
 </html>

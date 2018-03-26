@@ -285,6 +285,84 @@ small.symbol {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); } }
 
+/* ANIMATION */
+.hero--title {
+  animation-duration: 1s;
+  animation-delay: .5s;
+}
+
+.involved--title {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.involved--sub {
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+.start-1 {
+  animation-duration: 1s;
+  animation-delay: 1.7s;
+}
+
+.mission--title {
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+
+.bg-blue-mission--h4 {
+  animation-duration: 1s;
+  animation-delay: 1.7s;
+}
+
+.news--title {
+  animation-duration: 1s;
+  animation-delay: 1.7s;
+}
+
+.news-sub-title {
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+}
+
+.project--img {
+  animation-duration: 1s;
+  animation-delay: .8s;
+}
+
+.about--text {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.about--div {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.about__info {
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+
+.about__img-2 {
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+
+.contact--globe {
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+.news--title {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+}
+
+/* End ANIMATION */
+
+
 .involved {
   padding: 75px 35px 35px;
 }
@@ -449,6 +527,7 @@ small.symbol {
   width: 200px;
   height: auto;
   margin: auto;
+  margin-top: -103px;
 }
 
 .about {
@@ -476,6 +555,15 @@ small.symbol {
 @media (min-width: 992px) {
   .about--div-inter {
     padding-left: 30px;
+  }
+  .about-img-1 {
+    margin-left: 30px;
+  }
+  .about-img-2 {
+    padding-right: 30px;
+  }
+  .about__info {
+    padding-left: 10px;
   }
 }
 
@@ -623,15 +711,15 @@ small.symbol {
   border-radius: 5px;
 }
 
-.newsletter .btn-hollow {
+/* .newsletter .btn-hollow {
   background-color: #5290d2;
   color: #fff;
   border: 2px solid #fff;
   padding: 7px 20px;
   border-radius: 8px;
-  /* margin-left: 10px; */
+  margin-left: 10px;
   font-weight: 500;
-}
+} */
 
 .newsletter .btn-hollow {
   background-color: #ff8900;
@@ -639,14 +727,13 @@ small.symbol {
   border: 2px solid #ff8900;
   padding: 4px 28px;
   border-radius: 30px;
-  /* margin-left: 10px; */
   font-size: 1.8rem;
   font-weight: 500;
 }
 
 .newsletter .btn-hollow:hover {
   background-color: #fff;
-  color: #479946;
+  color: #ff8900;
 }
 
 .newsletter #form > input.btn.btn-hollow {
@@ -1446,7 +1533,7 @@ footer .copy--text {
 
 hr {
   width: 30%;
-  margin: 50px auto;
+  margin: 30px auto 20px;
 }
 
 #mc_embed_signup {

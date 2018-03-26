@@ -29,7 +29,10 @@ $(document).ready(function(){
   })
   $('.stop').on('click',function(){
       owl.trigger('stop.owl.autoplay')
-  })
+  });
+  // Animate on scroll
+  new WOW().init();
+
 
 });
 

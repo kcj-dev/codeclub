@@ -80,9 +80,10 @@ function sendEmail(e) {
  * @param jqXHR
  */
 function displayEmailResponse(data, textStatus, jqXHR) {
+    console.log(data);
     if (data['email sent'] && data['email sent'] == true) {
         // $('#emailSent').removeClass('hidden');
-        window.location.replace("http://codeclub.ca/findVenues.html");
+        window.location.replace("http://codeclub.ca/thankyou_contact.html");
     }
 }
 

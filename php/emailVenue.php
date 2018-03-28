@@ -9,7 +9,7 @@
     $headers .= 'From: <ross@kidscodejeunesse.org>' . "\r\n";
     $headers .= 'Cc: <info@codeclub.ca>' . "\r\n";
 
-    $subject = "Volunteer Opportunity";
+    $subject = "Code Club Volunteer Request";
     $body = '';
 
     $dao = new DAO($file, $delimiter);
@@ -50,8 +50,8 @@
         }
 
         // The body of the email that will be sent
-        $body .= $name . " is looking for a volunteer opportunity. \r\n";
-        $body .= "Message: $message \r\n";
+        $body .= $name . " is looking for a volunteer opportunity. \r\n\r\n";
+        $body .= "Message: $message \r\n\r\n\r\n";
         $body .= "Volunteer's email: $email";
 
         if (@mail($venue->getEmail(), $subject, $body, $headers)) {

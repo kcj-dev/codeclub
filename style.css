@@ -765,6 +765,52 @@ small.symbol {
   background-color: #f9a048;
   color: white;
 }
+
+/*** BOX RESOURCES ***/
+.box2 {
+  border: 2px solid #479946;
+  width: 40%;
+  height: auto;
+  padding: 8px 10px 25px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  display: none;
+  overflow: hidden;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .box2 {
+    width: 30%;
+    padding: 15px 10px 30px;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .box2 {
+    max-width: 20%;
+  }
+}
+
+@media only screen and (min-width : 1500px) {
+  .box2 {
+    max-width: 250px;
+  }
+}
+
+.box2__title {
+  color: #479946;
+}
+
+.box2 .resources {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*** END BOX ***/
 .btn-secondary, .btn-secondary:active {
     background-color: inherit;
     padding-left: 25px;

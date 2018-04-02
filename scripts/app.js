@@ -36,6 +36,22 @@ $(document).ready(function(){
 
 });
 
+/*====================================================
+                        BOX
+====================================================*/
+
+$(document).ready(function() {
+
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 600){
+        $('.to-top2').fadeIn(200);
+      } else {
+        $('.to-top2').fadeOut(200);
+      }
+    });
+  });// End $
+
+
 // var owl = $('.owl-carousel');
 // owl.owlCarousel({
 //     items:4,

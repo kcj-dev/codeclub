@@ -28,7 +28,7 @@
     
     if (isset($_GET['radian']) && is_numeric($_GET['radian'])) {
         $radian = $_GET['radian'];
-        $venues = $dao->getNearbyVenueWithRadian($lat, $lng, $radian);
+        $venues = $dao->findNearbyVenuesWithRadian($lat, $lng, $radian);
         header('Content-Type: application/json');
         echo json_encode($venues);
         exit;

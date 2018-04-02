@@ -56,9 +56,9 @@
         }
 
         /**
-         * Find all the venues
+         * Find all the venues by countryCode
          */
-        function getVenuesByCountryCode($countryCode) {
+        function findVenuesByCountryCode($countryCode) {
             if (($handle = fopen($this->file, 'r')) === false) {
                 die('Error opening file');
             }
@@ -91,7 +91,7 @@
          * @param $radian
          * @return string
          */
-        function getNearbyVenueWithRadian($lat, $lng, $radian) {
+        function findNearbyVenuesWithRadian($lat, $lng, $radian) {
             if (($handle = fopen($this->file, 'r')) === false) {
                 die('Error opening file');
             }
@@ -120,7 +120,7 @@
 
 
         /**
-         * Get the distance between 2 latitudes and longitutes
+         * Calculate the distance between 2 latitudes and longitutes
          */
         private function calculateDistanceBetween2LatAndLng($lat1, $lng1, $lat2, $lng2) {
             $R = 6371; //6371 for km, 3959 for mile

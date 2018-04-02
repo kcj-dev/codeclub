@@ -39,7 +39,7 @@ function updateFom(data, textStatus, jqXHR) {
     } else {
         var club = data;
 
-        // console.log(club);
+        console.log(club);
         $('#clubName').html(club.Name);
         $('#clubAddress').html(club.Address + ', ' + club.City + '&nbsp;&nbsp;&nbsp;' + club.PostalCode);
     }

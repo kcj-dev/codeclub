@@ -35,7 +35,7 @@ function makeMap() {
   var clubs = g.res, lat, lng, dataZ, LatLng
       markers = [];
   console.log(clubs.length);
-  // console.log(clubs);
+  console.log(clubs);
   //checks if there is a province selected in the select tag.
    if(g.region){
      lat = parseInt(g.region.options[g.region.selectedIndex].getAttribute("data-lat"));

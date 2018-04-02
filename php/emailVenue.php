@@ -54,6 +54,7 @@
         $body .= "Message: $message \r\n\r\n\r\n";
         $body .= "Volunteer's email: $email";
 
+//        $venue->getEmail()
         if (@mail($venue->getEmail(), $subject, $body, $headers)) {
             $response = [
                 'email sent' => true

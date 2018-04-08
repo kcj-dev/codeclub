@@ -1,5 +1,7 @@
 <?php
     require_once 'DAO.php';
+
+    date_default_timezone_set ('America/Montreal');
     // Name of the csv file to read from
     $file = 'clubs.csv';
     $delimiter = ',';
@@ -59,6 +61,12 @@
             $response = [
                 'email sent' => true
             ];
+
+            $now = date("Y-m-d H:i:s");
+//            $volunteer = ["$name,$email,$venue->getName(),$now"];
+            $file = fopen("volunteerLog.csv","w");
+            fputcsv($file, "$name,$email,$venue->getName(),$now");
+            fclose($file);
         } else {
             $response = [
                 'email sent' => false

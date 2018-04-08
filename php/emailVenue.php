@@ -9,7 +9,7 @@
     $headers = "MIME-Version: 1.0" . "\r\n";
 //    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: <ross@kidscodejeunesse.org>' . "\r\n";
-    $headers .= 'Cc: <info@codeclub.ca>' . "\r\n";
+//    $headers .= 'Cc: <info@codeclub.ca>' . "\r\n";
 
     $subject = "Code Club Volunteer Request";
     $body = '';
@@ -63,9 +63,11 @@
             ];
 
             $now = date("Y-m-d H:i:s");
-//            $volunteer = ["$name,$email,$venue->getName(),$now"];
-            $file = fopen("volunteerLog.csv","w");
-            fputcsv($file, "$name,$email,$venue->getName(),$now");
+            $venueName = $venue->getName();
+            unset($volunteerInfo);
+            $volunteerInfo =  [$name,$email,$venueName,$now];
+            $file = fopen("volunteerLog.csv","a");
+            fputs($file,"\r\n" . implode($volunteerInfo, ','));
             fclose($file);
         } else {
             $response = [

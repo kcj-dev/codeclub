@@ -20,7 +20,7 @@ $(function() {
   else
     CodeClubWorld.path = './';
 
-  console.log(CodeClubWorld.path);
+  //console.log(CodeClubWorld.path);
 });
 
 CodeClubWorld.makeMap = function() {
@@ -37,7 +37,7 @@ CodeClubWorld.makeMap = function() {
     var clubs = data, lat, lng, dataZ, LatLng
         markers = [];
 
-   console.log(clubs);
+   //console.log(clubs);
     if(CodeClubWorld.region){
       lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
       lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
@@ -68,7 +68,7 @@ CodeClubWorld.makeMap = function() {
 
       // if(club.venue.address.city === 'Surrey') {
       //   console.log(club);
-      //   // console.log(lat + " " + lng);
+      //   console.log(lat + " " + lng);
       // }
 
       var latLng = new google.maps.LatLng(lat, lng),
@@ -86,8 +86,8 @@ CodeClubWorld.makeMap = function() {
         var infobox = CodeClubWorld.infobox;
         infobox.close();
 
-        console.log(club.name);
-        console.log(marker.position.lat() + " " + marker.position.lng());
+        //console.log(club.name);
+        //console.log(marker.position.lat() + " " + marker.position.lng());
 
         var content = [];
 

@@ -6,4 +6,4 @@
   $clubs = $dao->findVenuesByCountryCode('CA');
   header('Content-Type: application/json');
   echo json_encode($clubs);
- ?>
+?>

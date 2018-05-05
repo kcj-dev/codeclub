@@ -5,12 +5,15 @@ var g = {};
 */
 $(function() {
   g.path = "./";
+  console.log("hello", $('#language .active a').html())
   if ($('#language .active a').html() !== 'EN') {
     g.path = '../';
+    console.log("here", g.path + "php/clubsJson.php")
   }
   g.region = document.getElementById('region-search');
   g.infobox = new google.maps.InfoWindow();
   g.file = g.request = createRequestObject();
+
   g.file.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         g.res = JSON.parse(this.responseText);
@@ -18,9 +21,10 @@ $(function() {
         if(g.region){
           g.region.onchange = makeMap;
         }
-
     }
   };
+
+  //Note: in production, it needs to be g.path + "php/clubsJson.php" for FR map to work.
   g.file.open("GET", "php/clubsJson.php", true);
   g.file.send();
 });
@@ -90,17 +94,17 @@ function makeMap() {
           content.push('<p>Name: ' + club.Name + '</p>');
         }
         if (club.Address) {
-          content.push('<p>Addres: ' + club.Address + '</p>');
+          content.push('<p>Address: ' + club.Address + '</p>');
         }
         if (club.PostalCode) {
-          content.push('<p>PostalCode: ' + club.PostalCode + '</p>');
+          content.push('<p>Postal Code: ' + club.PostalCode + '</p>');
         }
         if (club.Url) {
           content.push('<a target="_blank" href="' + club.Url + '">' + club.Url + '</a>');
         }
-          if (club.Id) {
-              content.push('<p><a class="btn btn-green" href="contactVenueForm.html?club_id=' + club.Id + '">Contact</a></p>');
-          }
+        if (club.Id) {
+          content.push('<p><a class="btn btn-green" href="contactVenueForm.html?club_id=' + club.Id + '">Contact</a></p>');
+        }
 
         content = content.join('');
         infobox.setContent(content);

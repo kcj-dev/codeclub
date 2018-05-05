@@ -5,8 +5,10 @@ var g = {};
 */
 $(function() {
   g.path = "./";
+  console.log("hello", $('#language .active a').html())
   if ($('#language .active a').html() !== 'EN') {
     g.path = '../';
+    console.log("here", g.path + "php/clubsJson.php")
   }
   g.region = document.getElementById('region-search');
   g.infobox = new google.maps.InfoWindow();
@@ -22,6 +24,7 @@ $(function() {
     }
   };
 
+  //Note: in production, it needs to be g.path + "php/clubsJson.php" for FR map to work.
   g.file.open("GET", "php/clubsJson.php", true);
   g.file.send();
 });
